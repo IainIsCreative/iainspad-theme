@@ -343,7 +343,7 @@ a.cyan:hover {color: #07373a;}
                             }
 /*---Posts---*/
 
-                            #post-container article section.post-entry aside + p {
+                            #post-container article section.post-entry aside + img + p {
                                 font: 600 1.125em/20px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
                                 text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
                                 padding: 5px 0 0;
