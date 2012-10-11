@@ -581,7 +581,8 @@ a.cyan:hover {color: #07373a;}
                         overflow: hidden;
                         color: #fff;
                         font: normal 400 0.9375em/20px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-                        margin: 0 0 20px;
+                        margin: 10px 0 23px;
+                        display: block;
                     }
 
                         #post-author figure {
@@ -608,10 +609,6 @@ a.cyan:hover {color: #07373a;}
         color: #1b7971;
         text-shadow: 0px 1px 1px rgba(0,0,0,0.4);
         font: normal 600 1.625em/30px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    }
-
-    ol.commentslist {
-
     }
 
         ol.commentslist > li {
@@ -725,6 +722,7 @@ a.cyan:hover {color: #07373a;}
 
         #comments-form {
             overflow: hidden;
+            padding: 5px 0 0;
         }
 
             #comments-form input, #comments-form textarea {
@@ -974,6 +972,10 @@ a.cyan:hover {color: #07373a;}
             font: normal 600 2em/40px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
             text-shadow: 0px 1px 1px rgba(0,0,0,0.4);
             margin: 0 0 25px;
+        }
+
+        .page #main h4 {
+            line-height: 20px;
         }
 
 /*---Portfolio Items---*/

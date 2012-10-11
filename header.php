@@ -36,10 +36,10 @@
 		<h1><a class="logo" href="<?php bloginfo('siteurl'); ?>"><?php bloginfo('name'); ?></a></h1>
 		<nav role="navigation" id="navigation">
 			<ul<?php $active = 'class="active"'; ?>>
-				<li><a href="<?php bloginfo('siteurl'); ?>" <?php if(is_home() || is_single() && in_category('Portfolio') || is_archive() && in_category('Portfolio')) { echo $active; } ?>>Home</a></li>
-				<li><a href="<?php bloginfo('siteurl'); ?>/about" <?php if(is_page('About')) { echo $active; } ?>>About</a></li>
-				<li><a href="<?php bloginfo('siteurl'); ?>/blog" <?php if(is_page('Blog') || is_single() && !in_category('Portfolio') || is_search() || is_archive() && !in_category('Portfolio')) { echo $active; } ?>>Blog</a></li>
-				<li><a href="<?php bloginfo('siteurl'); ?>/contact" <?php if(is_page('Contact')) { echo $active; } ?>>Contact</a></li>
+				<li><a href="/" <?php if(is_home() || is_single() && in_category('Portfolio') || is_archive() && in_category('Portfolio')) { echo $active; } ?>>Home</a></li>
+				<li><a href="/about" <?php if(is_page('About')) { echo $active; } ?>>About</a></li>
+				<li><a href="/blog" <?php if(is_page('Blog') || is_single() && !in_category('Portfolio') || is_search() || is_archive() && !in_category('Portfolio')) { echo $active; } ?>>Blog</a></li>
+				<li><a href="/contact" <?php if(is_page('Contact')) { echo $active; } ?>>Contact</a></li>
 			</ul>
 		</nav>
 	</header>
