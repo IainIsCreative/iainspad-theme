@@ -1625,7 +1625,7 @@ html.-lt-ie9 input[type="text"], html.-lt-ie9 input[type="email"], html.-lt-ie9 
 
 @media only screen and (min-width: 480px) {
 
-    #post-container article section a.thumbnail img {display: block;}
+    #post-container article section a.thumbnail img {display: block; margin: 0 0 17px;}
 
     #post-container article section aside {display: block;}
 
