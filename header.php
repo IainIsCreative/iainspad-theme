@@ -2,7 +2,7 @@
 <!--[if lt IE 7]><html class="ie lt-ie7 lt-ie8 lt-ie9 no-js" lang="en" dir="ltr"><![endif]-->
 <!--[if IE 7]><html class="ie lt-ie8 lt-ie9 no-js" lang="en" dir="ltr"><![endif]-->
 <!--[if IE 8]><html class="ie lt-ie9 no-js" lang="en" dir="ltr"><![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js lt-ie9" lang="en" dir="ltr"><!--<![endif]-->
 <head>
 <meta charset="utf-8" />
 <meta name="author" content="<?php bloginfo('name'); ?>" />
@@ -20,6 +20,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php bloginfo('template_url'); ?>/img/apple-touch-icon-ipad.png" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php bloginfo('template_url'); ?>/img/apple-touch-icon-iphone-retina.png" />
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php bloginfo('template_url'); ?>/img/apple-touch-icon-ipad-retina.png" />
+<link rel="alternate" type="application/rss+xml" title="iainspad RSS feed" href="<?php bloginfo('rss2_url'); ?>" />
 <script src="//use.typekit.net/sab7qbq.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
 <!--[if lt IE 9]>

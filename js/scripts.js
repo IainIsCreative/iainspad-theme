@@ -24,6 +24,19 @@ $(document).ready(function() {
 			$('html.lt-ie9 nav[role="navigation"] ul li:nth-child(3)').addClass('navigation-item-3');
 			$('html.lt-ie9 nav[role="navigation"] ul li:nth-child(4)').addClass('navigation-item-4');
 
+			$('html.lt-ie9 ol#portfolio li:nth-child(2)').addClass('2-column-rowend');
+			$('html.lt-ie9 ol#portfolio li:nth-child(4)').addClass('2-column-rowend');
+			$('html.lt-ie9 ol#portfolio li:nth-child(6)').addClass('2-column-rowend');
+
+			$('html.lt-ie9 ol#portfolio li:nth-child(3)').addClass('3-column-rowend');
+			$('html.lt-ie9 ol#portfolio li:nth-child(6)').addClass('3-column-rowend');
+
+			$('html.lt-ie ol#portfolio li a aside').hide();
+
+				$('html.lt-ie9 ol#portfolio li a').hover(function() {
+					$(this).find('aside').show();
+				});
+
 	$('article.portfolio-item').closest('body').addClass('view-item');
 
 	//Twitter plugin
