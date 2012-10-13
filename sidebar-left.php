@@ -46,7 +46,7 @@
 			<?php } elseif(is_page('Contact')) { ?>
 				<section class="contact">
 					<h4>Other ways of Contact</h4>
-					<p>I love hearing from people! I like discussing Design, Development, and ideas. I can be found on any of the following sites, and would love to hear from you.</p>
+					<p>I love hearing from people! I like discussing Design, Development, and ideas. I can be found on any of the following sites, and would love to hear from you. You may also want to check out the links belo, I'm quite social.</p>
 				</section>
 				<section class="twitter">
 					<h4>Twitter</h4>
@@ -54,10 +54,10 @@
 				</section>
 				<nav class="social-networking">
 					<ul>
-						<li><a href="http://twitter.com/iainspad">Twitter</a></li>
-						<li><a href="http://dribbble.com/iainspad">Dribbble</a></li>
-						<li><a href="https://forrst.com/people/iainspad">Forrst</a></li>
-						<li><a href="https://www.facebook.com/pages/Iainspad/123090577838529">Facebook</a></li>
+						<li><a href="http://twitter.com/iainspad" target="blank">Twitter</a></li>
+						<li><a href="http://dribbble.com/iainspad" target="blank">Dribbble</a></li>
+						<li><a href="https://forrst.com/people/iainspad" target="blank">Forrst</a></li>
+						<li><a href="https://www.facebook.com/pages/Iainspad/123090577838529" target="blank">Facebook</a></li>
 					</ul>
 				</nav>
 			<?php } ?>
