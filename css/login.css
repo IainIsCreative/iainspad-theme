@@ -9,3 +9,10 @@ Hi! How's it going?
     transition: all 0.3s ease;
     -webkit-font-smoothing: antialiased;
 }
+
+
+body.login {
+	background: url('../img/bg.jpg') center top repeat #f4e4be;
+    font: normal 1.0625em/20px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #043f5e;
+}
