@@ -636,11 +636,11 @@ a.cyan:hover {color: #07373a;}
                     overflow: hidden;
                 }
 
-                ol.commentslist li h6 {
+                #comments ol.commentslist li h6 {
                     font: normal 500 1.125em/20px "ff-meta-serif-web-pro", Georgia, Time New Roman, serif;
                 }
 
-                    ol.commentslist li h6 i {
+                    #comments ol.commentslist li h6 i {
                         font: italic 500 1em/20px "ff-meta-serif-web-pro", Georgia, Time New Roman, serif;
                     }
 
