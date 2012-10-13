@@ -28,6 +28,9 @@
 <?php wp_footer(); ?>
 <script src="<?php bloginfo('template_url'); ?>/js/prettify.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/lang-css.js"></script>
+<?php $customjs = get_post_meta($post->ID, 'custom_js', true); if($customjs != '') { ?>
+<script src="<?php echo $customjs; ?>"></script>
+<?php } ?>
 <script src="<?php bloginfo('template_url'); ?>/js/scripts.js"></script>
 <script>
 	var _gaq = _gaq || [];
