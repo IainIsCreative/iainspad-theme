@@ -34,7 +34,7 @@
 <body <?php body_class(); ?>>
 <div id="wrapper">
 	<header role="banner">
-		<h1><a class="logo" href="<?php bloginfo('siteurl'); ?>"><?php bloginfo('name'); ?></a></h1>
+		<h1><a class="logo" href="/"><?php bloginfo('name'); ?></a></h1>
 		<nav role="navigation" id="navigation">
 			<ul<?php $active = 'class="active"'; ?>>
 				<li><a href="/" <?php if(is_home() || is_single() && in_category('Portfolio') || is_archive() && in_category('Portfolio')) { echo $active; } ?>>Home</a></li>
