@@ -223,8 +223,15 @@ add_filter('body_class','extra_body_classes');
 
 //Login file linking
 function custom_login_files() {
-	
+	$files = '<link rel="stylesheet" href="' . get_template_directory_uri() . '/css/login.css" />
+			  <script src="' . get_template_directory_uri() . '/js/jquery.min.js"></script>
+			  <script src="' . get_template_directory_uri() . '/js/login.js></script>
+			  <script src="//use.typekit.net/sab7qbq.js"></script>
+			<script>try{Typekit.load();}catch(e){}</script>';
+
+	echo $files;
 }
+add_action('login_head', 'custom_login_files');
 
 //Login title and url
 function custom_login_header_url() {
