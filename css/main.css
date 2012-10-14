@@ -641,7 +641,8 @@ a.cyan:hover {color: #07373a;}
                 }
 
                     #comments ol.commentslist li h6 i {
-                        font: italic 500 0.9375em/20px "ff-meta-serif-web-pro", Georgia, Time New Roman, serif;
+                        font: italic 500 0.8125em/20px "ff-meta-serif-web-pro", Georgia, Time New Roman, serif;
+                        visibility: hidden;
                     }
 
                 ol.commentslist li span.reply a {
@@ -1655,6 +1656,8 @@ html.lt-ie9 section > img {width: auto!important;}
     #comments-form input[type="submit"] {
         width: 160px;
     }
+
+    #comments ol.commentslist li h6 i {visibility: visible;}
 
     p.cancel a {width: 160px; float: left; margin: -30px 0 0;}
 
