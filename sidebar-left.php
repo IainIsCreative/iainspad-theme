@@ -23,16 +23,6 @@
 				<?php } ?>
 			<?php } elseif(is_page('About')) { ?>
 			<img src="<?php bloginfo('template_url'); ?>/img/avatar.png" alt="Hey, that's me!" />
-			<!--<section class="skills">
-				<h4>Skills</h4>
-				<ul>
-					<li>Photoshop/Illustrator</li>
-					<li>HTML/CSS</li>
-					<li>jQuery</li>
-					<li>Wordpress</li>
-					<li>Charisma</li>
-				</ul>
-			</section>-->
 			<section class="colophon">
 				<h4>Colophon</h4>
 				<ul>
