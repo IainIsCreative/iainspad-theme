@@ -2,7 +2,7 @@
 <!--[if lt IE 7]><html class="ie lt-ie7 lt-ie8 lt-ie9 no-js" lang="en" dir="ltr"><![endif]-->
 <!--[if IE 7]><html class="ie lt-ie8 lt-ie9 no-js" lang="en" dir="ltr"><![endif]-->
 <!--[if IE 8]><html class="ie lt-ie9 no-js" lang="en" dir="ltr"><![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js lt-ie9" lang="en" dir="ltr"><!--<![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
 <head>
 <meta charset="utf-8" />
 <meta name="author" content="<?php bloginfo('name'); ?>" />
