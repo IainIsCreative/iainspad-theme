@@ -248,7 +248,7 @@ a.cyan:hover {color: #07373a;}
 
                 #main h2 {font: normal 500 2.125em/30px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif; margin: 0 0 20px; text-shadow: 0px 1px 1px rgba(0,0,0,0.4);}
 
-                #main h3 {font: normal 500 1.625em/30px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif; margin: 0 0 20px; text-shadow: 0px 1px 1px rgba(0,0,0,0.4);}
+                #main h3 {font: normal 500 1.5em/30px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif; margin: 0 0 20px; text-shadow: 0px 1px 1px rgba(0,0,0,0.4);}
 
                 #main h4 {font: italic 400 1.5em/30px "ff-meta-serif-web-pro", Georgia, Time New Roman, serif; margin: 0 0 10px; color: #79211a;}
 
@@ -573,7 +573,7 @@ a.cyan:hover {color: #07373a;}
 /*---Post Author---*/
 
                 section.post-entry footer {
-                    padding: 10px 0 0;
+                    padding: 17px 0 0;
                 }
 
                     #post-author {
