@@ -1636,7 +1636,7 @@ html.lt-ie9 section > img {width: auto!important;}
 
 @media only screen and (min-width: 480px) {
 
-    #post-container article section a.thumbnail img {display: block; margin: 0 0 17px;}
+    #post-container article section a.thumbnail img {display: block;}
 
     #post-container article section aside {display: block;}
 
