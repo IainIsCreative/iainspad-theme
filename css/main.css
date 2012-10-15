@@ -373,14 +373,14 @@ a.cyan:hover {color: #07373a;}
                                 text-shadow: 0px 1px 1px #fff;
                             }
 
-                            #post-container article section p > cite {
+                            #post-container article section cite {
                                 font: normal 400 1em/18px "ff-meta-serif-web-pro", Georgia, Time New Roman, serif;
                                 color: #1b7971;
                                 display: block;
                                 margin: 0 0 19px;
                             }
 
-                                #post-container article section p > cite:before {
+                                #post-container article section cite:before {
                                     content: '—';
                                     padding: 0 5px 0 0;
                                 }
