@@ -150,7 +150,7 @@ img, video, canvas, object {
 
 body {
     background: url('../img/bg.jpg') center top repeat #f4e4be;
-    font: normal 1.0625em/20px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: normal 1em/20px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #043f5e;
 }
 
