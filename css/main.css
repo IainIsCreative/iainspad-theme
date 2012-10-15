@@ -1768,7 +1768,7 @@ html.lt-ie9 section > img {width: auto!important;}
 
     #post-container article section aside {width: 120px; margin: 0 0 0 -140px; float: left; border-bottom: none;}
 
-    #post-container article section aside ul li {background: url('../img/post_meta.png') no-repeat transparent; width: 100px; padding: 5px 0 4px 20px; border-bottom: 1px solid #1a5779;}
+    #post-container article section aside ul li {background: url('../img/post_meta.png') no-repeat transparent; font: normal 400 0.875em/20px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif; width: 100px; padding: 5px 0 4px 20px; border-bottom: 1px solid #1a5779;}
 
     #post-container article section aside ul li:nth-child(1):after {content: '';}
 
