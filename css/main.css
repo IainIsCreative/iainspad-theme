@@ -953,7 +953,7 @@ a.cyan:hover {color: #07373a;}
                             }
 
                             #sidebar form input::-webkit-input-placeholder {font-style: normal;}
-                            #sidebar form input::-moz-placeholder {font-style: normal;}
+                            #sidebar form input:-moz-placeholder {font-style: normal;}
 
                             #sidebar form input:hover {
                                 -webkit-box-shadow: inset 0px 0px 3px rgba(0,0,0,0.4);
@@ -998,10 +998,6 @@ a.cyan:hover {color: #07373a;}
         #main article h1.item-title a {
             text-shadow: 0px 1px 1px rgba(0,0,0,0.4);
         }
-
-            #main article section.item-entry {
-
-            }
 
                 section.item-entry > img {
                     max-width: 100%;
