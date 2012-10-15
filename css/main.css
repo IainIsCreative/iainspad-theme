@@ -572,6 +572,10 @@ a.cyan:hover {color: #07373a;}
 
 /*---Post Author---*/
 
+                section.post-entry footer {
+                    padding: 10px 0 0;
+                }
+
                     #post-author {
                         background: rgba(34,126,143,0.6);
                         padding: 10px 10px 13px 120px;
