@@ -35,17 +35,19 @@
 							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="thumbnail"><?php the_post_thumbnail('post-thumb'); ?></a>
 						<?php } ?>
 						<?php the_content(); ?>
-						<div id="post-author">
-							<figure>
-								<a href="<?php the_author_meta('user_url'); ?>"><?php echo get_avatar(get_the_author_meta('user_email'), '160', ''); ?></a>
-							</figure>
-							<h5>Written by <?php the_author_link(); ?></h5>
-							<p><?php the_author_meta('description'); ?></p>
-							<?php if(get_the_author_meta('twitter') != '') { ?>
-							<a href="https://twitter.com/<?php the_author_meta('twitter'); ?>" class="twitter-follow-button" data-show-count="true">Follow <?php get_the_author_meta('twitter'); ?></a>
-							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-							<?php } ?>
-						</div>
+						<footer>
+							<div id="post-author">
+								<figure>
+									<a href="<?php the_author_meta('user_url'); ?>"><?php echo get_avatar(get_the_author_meta('user_email'), '160', ''); ?></a>
+								</figure>
+								<h5>Written by <?php the_author_link(); ?></h5>
+								<p><?php the_author_meta('description'); ?></p>
+								<?php if(get_the_author_meta('twitter') != '') { ?>
+								<a href="https://twitter.com/<?php the_author_meta('twitter'); ?>" class="twitter-follow-button" data-show-count="true">Follow <?php get_the_author_meta('twitter'); ?></a>
+								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+								<?php } ?>
+							</div>
+						</footer>
 					</section>
 					<?php comments_template(); ?>
 				</article>
