@@ -9,6 +9,22 @@ $(document).ready(function() {
 	docElement.setAttribute('data-useragent', navigator.userAgent);
 	docElement.setAttribute('data-platform', navigator.platform);
 
+	//If it's a HiDPI display, replace with the @2x favicon
+
+	if(window.devicePixelRatio == 2) {
+		var favicon = $('link[rel="shortcut icon"]');
+
+			for(var i = 0; i < favicon.length; i++) {
+
+				var imageType = favicon[i].href.substr(-4);
+				var imageName = favicon[i].href.substr(0, favicon[i].href.length - 4);
+				imageName += "@2x" + imageType;
+
+				favicon[i].href = imageName;
+
+			}
+	}
+
 	//IE Scripts for CSS
 
 		/*
@@ -31,7 +47,7 @@ $(document).ready(function() {
 			$('html.lt-ie9 ol#portfolio li:nth-child(3)').addClass('3-column-rowend');
 			$('html.lt-ie9 ol#portfolio li:nth-child(6)').addClass('3-column-rowend');
 
-			$('html.lt-ie ol#portfolio li a aside').hide();
+			$('html.lt-ie9 ol#portfolio li a aside').hide();
 
 				$('html.lt-ie9 ol#portfolio li a').hover(function() {
 					$(this).find('aside').show();
