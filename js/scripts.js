@@ -9,7 +9,9 @@ $(document).ready(function() {
 	docElement.setAttribute('data-useragent', navigator.userAgent);
 	docElement.setAttribute('data-platform', navigator.platform);
 
-	//If it's a HiDPI display, replace with the @2x favicon
+	var page = $('#wrapper');
+
+	//If it's a HiDPI display, replace the favicon with the @2x favicon
 
 	if(window.devicePixelRatio == 2) {
 		var favicon = $('link[rel="shortcut icon"]');
@@ -39,13 +41,6 @@ $(document).ready(function() {
 			$('html.lt-ie9 nav[role="navigation"] ul li:nth-child(2)').addClass('navigation-item-2');
 			$('html.lt-ie9 nav[role="navigation"] ul li:nth-child(3)').addClass('navigation-item-3');
 			$('html.lt-ie9 nav[role="navigation"] ul li:nth-child(4)').addClass('navigation-item-4');
-
-			$('html.lt-ie9 ol#portfolio li:nth-child(2)').addClass('2-column-rowend');
-			$('html.lt-ie9 ol#portfolio li:nth-child(4)').addClass('2-column-rowend');
-			$('html.lt-ie9 ol#portfolio li:nth-child(6)').addClass('2-column-rowend');
-
-			$('html.lt-ie9 ol#portfolio li:nth-child(3)').addClass('3-column-rowend');
-			$('html.lt-ie9 ol#portfolio li:nth-child(6)').addClass('3-column-rowend');
 
 			$('html.lt-ie9 ol#portfolio li a aside').hide();
 
@@ -175,7 +170,6 @@ $(document).ready(function() {
 	//Page Animations
 	
 		//Page animation on load
-		var page = $('#wrapper');
 		$(page).delay(500).animate({opacity: 1}, 600);
 
 		//UX controls
