@@ -1780,7 +1780,7 @@ html.lt-ie9 section > img {width: auto!important;}
 /*---Retina display yo! The new era of computer screens is HERE!---*/
 /*---Want to see a cool article on my blog tending to the Retina Display? Well, there's one coming soon, and it will be awesome. Let's go Retina first!---*/
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
     body{
         background: url('../img/retina/bg.jpg') center top repeat #f4e4be;
         background-size: 300px 300px;
@@ -1854,6 +1854,18 @@ html.lt-ie9 section > img {width: auto!important;}
         background-size: 50px 40px;
     }
 
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 900px), only screen and (min--moz-device-pixel-ratio: 1.5) and (min-width: 900px), only screen and (min-device-pixel-ratio: 1.5) and (min-width: 900px), only screen and (min-resolution: 192dpi) and (min-width: 900px), only screen and (min-resolution: 2dppx) and (min-width: 900px) {
+
+    #post-container article section aside ul li {
+        background: url('../img/retina/post_meta.png') no-repeat transparent;
+        background-size: 15px 40px;
+    }
+
+    #post-container article section aside ul li:nth-child(2) {
+        background-position: 0 -18px;
+    }
 }
 
 /*---Print Media---*/
