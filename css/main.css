@@ -1630,6 +1630,30 @@ html.-lt-ie9 input[type="text"], html.-lt-ie9 input[type="email"], html.-lt-ie9 
 
 html.lt-ie9 section > img {width: auto!important;}
 
+html.lt-ie9 nav.social-networking ul li a.twitter {background-position: -5px 0;}
+
+html.lt-ie9 nav.social-networking ul li a.dribbble {background-position: -36px 0;}
+
+html.lt-ie9 nav.social-networking ul li a.forrst {background-position: -65px 0;}
+
+html.lt-ie9 nav.social-networking ul li a.facebook {background-position: -95px 0;}
+
+html.lt-ie9 nav.social-networking ul li a.twitter:hover {background-position: -5px -30px;}
+
+html.lt-ie9 nav.social-networking ul li a.dribbble:hover {background-position: -36px -30px;}
+
+html.lt-ie9 nav.social-networking ul li a.forrst:hover {background-position: -65px -30px;}
+
+html.lt-ie9 nav.social-networking ul li a.facebook:hover {background-position: -95px -30px;}
+
+html.lt-ie9 nav.social-networking ul li a.twitter:active {background-position: -5px -60px;}
+
+html.lt-ie9 nav.social-networking ul li a.dribbble:active {background-position: -36px -60px;}
+
+html.lt-ie9 nav.social-networking ul li a.forrst:active {background-position: -65px -60px;}
+
+html.lt-ie9 nav.social-networking ul li a.facebook:active {background-position: -95px -60px;}
+
 /*---Responsivness!---*/
 
 @media only screen and (min-width: 480px) {
