@@ -420,7 +420,7 @@ code {font-size: 0.75em;}
                                     background: #002b36;
                                     display: block;
                                     color: #93a1a1;
-                                    -webkit-font-smoothing: antialiased;
+                                    -webkit-font-smoothing: subpixel-antialiased;
                                     -webkit-border-radius: 5px;
                                     -moz-border-radius: 5px;
                                     -o-border-radius: 5px;
