@@ -561,6 +561,14 @@ code {font-size: 0.75em;}
                                         color: #268bd2;
                                     }
 
+                                    .lang-css.prettyprint .opn {
+                                        color: #268bd2;
+                                    }
+
+                                    .lang-css.prettyprint .cls {
+                                        color: #dc322f;
+                                    }
+
                                     .lang-css.prettyprint .kwd {
                                         color: #af8700;
                                     }
