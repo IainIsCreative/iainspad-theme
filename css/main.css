@@ -418,6 +418,10 @@ code {font-size: 0.6875em;}
                                 -webkit-font-smoothing: subpixel-antialiased;
                             }
 
+                            #post-container article section pre code {
+                                overflow: auto;
+                            }
+
                                 pre > code.prettyprint {
                                     background: #002b36;
                                     display: block;
