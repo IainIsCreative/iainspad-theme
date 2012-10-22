@@ -414,7 +414,7 @@ code {font-size: 0.75em;}
 
                             #post-container article section pre {
                                 overflow: auto;
-                                white-space: pre;
+                                white-space: pre-wrap;
                                 -webkit-font-smoothing: subpixel-antialiased;
                                 -moz-tab-size: 2;
                                 -o-tab-size: 2;
