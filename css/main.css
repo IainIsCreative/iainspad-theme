@@ -546,7 +546,7 @@ code {font-size: 0.75em;}
                                         color: #00afaf;
                                     }
 
-                                    .lang-css.prettyprint .pun, .lang-css.prettyprint .id {
+                                    .lang-css.prettyprint .pun, .lang-css.prettyprint .id, .lang-css.prettyprint .id .pun {
                                         color: #268bd2;
                                     }
 
