@@ -1803,6 +1803,7 @@ html.lt-ie9 section > img {width: auto!important;}
     #sidebar form input {
         background: url('../img/retina/search.png') 170px 4px no-repeat rgba(34,126,143,0.6);
         background-size: 20px 20px;
+        -webkit-font-smoothing: subpixel-antialiased;
     }
 
     nav.social-networking ul li a {
