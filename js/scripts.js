@@ -42,6 +42,12 @@ $(document).ready(function() {
 			$('html.lt-ie9 nav[role="navigation"] ul li:nth-child(3)').addClass('navigation-item-3');
 			$('html.lt-ie9 nav[role="navigation"] ul li:nth-child(4)').addClass('navigation-item-4');
 
+			//Add classes per social link item
+			$('html.lt-ie9 nav.social-networking ul li:nth-child(1) a').addClass('twitter');
+			$('html.lt-ie9 nav.social-networking ul li:nth-child(2) a').addClass('dribbble');
+			$('html.lt-ie9 nav.social-networking ul li:nth-child(3) a').addClass('forrst');
+			$('html.lt-ie9 nav.social-networking ul li:nth-child(1) a').addClass('facebook');
+
 			$('html.lt-ie9 ol#portfolio li a aside').hide();
 
 				$('html.lt-ie9 ol#portfolio li a').hover(function() {
