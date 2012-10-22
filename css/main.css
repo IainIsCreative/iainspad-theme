@@ -644,6 +644,7 @@ code {font-size: 0.75em;}
                         }
 
                                 article section.post-entry footer #post-author figure a img {
+                                    max-width: 100%;
                                     -webkit-border-radius: 40px;
                                     -moz-border-radius: 40px;
                                     -o-border-radius: 40px;
