@@ -955,6 +955,7 @@ code {font-size: 0.75em;}
                                 -moz-transition: background 0.3s linear, box-shadow 0.3s ease;
                                 -ms-transition: background 0.3s linear, box-shadow 0.3s ease;
                                 transition: background 0.3s linear, box-shadow 0.3s ease;
+                                -webkit-font-smoothing: subpixel-antialiased;
                             }
 
                             #sidebar form input::-webkit-input-placeholder {font-style: normal;}
@@ -1800,10 +1801,9 @@ html.lt-ie9 section > img {width: auto!important;}
         background-size: 200px 143px;
     }
 
-    #sidebar form input {
+    #sidebar form input, #sidebar form input:focus {
         background: url('../img/retina/search.png') 170px 4px no-repeat rgba(34,126,143,0.6);
         background-size: 20px 20px;
-        -webkit-font-smoothing: subpixel-antialiased;
     }
 
     nav.social-networking ul li a {
