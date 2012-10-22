@@ -1774,8 +1774,6 @@ html.lt-ie9 nav.social-networking ul li a.facebook:active {background-position: 
 
     #blog-content {padding: 0 240px 0 0;}
 
-    #post-container article section.post-entry img {max-width: 85%; margin: 0 auto; display: block;}
-
     #sidebar {margin: 16px -240px 0 0;}
 
     #sidebar-left {
@@ -1821,6 +1819,8 @@ html.lt-ie9 nav.social-networking ul li a.facebook:active {background-position: 
     #post-container article section aside ul li:nth-child(1):after {content: '';}
 
     #post-container article section aside ul li:last-child {display: block;}
+
+    #post-container article section.post-entry img {max-width: 85%; margin: 0 auto; display: block;}
 }
 
 @media only screen and (min-width: 1100px) {
