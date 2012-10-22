@@ -565,7 +565,7 @@ code {font-size: 0.75em;}
                                         color: #268bd2;
                                     }
 
-                                    .lang-css.prettyprint .cls {
+                                    .lang-css.prettyprint .cls .pun {
                                         color: #dc322f;
                                     }
 
