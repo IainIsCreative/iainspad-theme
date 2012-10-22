@@ -365,7 +365,7 @@ code {font-size: 0.75em;}
 
                                 #post-container article section.post-entry > ol li, #post-container article section.post-entry > ul li {}
 
-                                #post-container article section.post-entry img {
+                                article section.post-entry img {
                                     -webkit-border-radius: 5px;
                                     -moz-border-radius: 5px;
                                     -o-border-radius: 5px;
