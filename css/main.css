@@ -562,7 +562,7 @@ code {font-size: 0.75em;}
                                     }
 
 
-                                    .lang-css.prettyprint .id, .lang-css.prettyprint .id .pln, .lang-css.prettyprint .class, .lang-css.prettyprint .class .pln {
+                                    .lang-css.prettyprint .id, .lang-css.prettyprint .id .pun, .lang-css.prettyprint .id .pln, .lang-css.prettyprint .class, .lang-css.prettyprint .class .pun, .lang-css.prettyprint .class .pln {
                                         color: #268bd2;
                                     }
 
