@@ -415,7 +415,6 @@ code {font-size: 0.75em;}
                             #post-container article section pre {
                                 overflow: auto;
                                 white-space: pre-wrap;
-                                -webkit-font-smoothing: subpixel-antialiased;
                                 -moz-tab-size: 2;
                                 -o-tab-size: 2;
                                 tab-size: 2;
@@ -444,7 +443,7 @@ code {font-size: 0.75em;}
 
                                 #post-container article section pre.minified {white-space: nowrap; padding: 3px 0;}
 
-                                    .linenums {counter-reset: line;}
+                                    .linenums {counter-reset: line; -webkit-font-smoothing: subpixel-antialiased;}
 
                                     .linenums li {
                                         position: relative;
