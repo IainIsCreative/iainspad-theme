@@ -364,7 +364,7 @@ code {font-size: 0.75em;}
 
                                 #post-container article section.post-entry > ol li, #post-container article section.post-entry > ul li {}
 
-                                #post-container article section img {
+                                #post-container article section.post-entry img {
                                     -webkit-border-radius: 5px;
                                     -moz-border-radius: 5px;
                                     -o-border-radius: 5px;
@@ -1773,6 +1773,8 @@ html.lt-ie9 nav.social-networking ul li a.facebook:active {background-position: 
     #content {padding: 0 0 0 280px;}
 
     #blog-content {padding: 0 240px 0 0;}
+
+    #post-container article section.post-entry img {max-width: 85%; margin: 0 auto; display: block;}
 
     #sidebar {margin: 16px -240px 0 0;}
 
