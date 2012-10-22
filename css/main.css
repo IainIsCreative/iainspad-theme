@@ -1626,6 +1626,8 @@ nav#portfolio-navigation {
 
 html.lt-ie8 {margin: 30px 0 0!important;}
 
+html.lt-ie8 body #wrap {font-style: normal;}
+
 html.-lt-ie9 input[type="text"], html.-lt-ie9 input[type="email"], html.-lt-ie9 input[type="url"], html.-lt-ie9 textarea, html.lt-ie9 #post-author {background: url('../img/input_bg.png') center center repeat transparent;}
 
 html.lt-ie9 section > img {width: auto!important;}
