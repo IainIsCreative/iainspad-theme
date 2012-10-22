@@ -413,6 +413,7 @@ code {font-size: 0.6875em;}
 /*---CODE!!!---*/
 
                             #post-container article section pre {
+                                overflow: auto;
                                 white-space: pre;
                             }
 
