@@ -442,7 +442,7 @@ code {font-size: 0.75em;}
                                     box-shadow: 0px 1px 3px rgba(0,0,0,0.4);
                                 }
 
-                                #post-container article section pre.minified {white-space: nowrap; padding: 3px 0;}
+                                #post-container article section pre.minified code {white-space: nowrap!important; padding: 3px 0;}
 
                                     .linenums {counter-reset: line;}
 
