@@ -557,11 +557,16 @@ code {font-size: 0.75em;}
                                         color: #00afaf;
                                     }
 
-                                    .lang-css.prettyprint .pun, .lang-css.prettyprint .id, .lang-css.prettyprint .id .pln, .lang-css.prettyprint .class, .lang-css.prettyprint .class .pln {
+                                    .lang-css.prettyprint .pun {
+                                        color: #839496;
+                                    }
+
+
+                                    .lang-css.prettyprint .id, .lang-css.prettyprint .id .pln, .lang-css.prettyprint .class, .lang-css.prettyprint .class .pln {
                                         color: #268bd2;
                                     }
 
-                                    .lang-css.prettyprint .opn {
+                                    .lang-css.prettyprint .opn .pun {
                                         color: #268bd2;
                                     }
 
