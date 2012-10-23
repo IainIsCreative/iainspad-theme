@@ -650,6 +650,11 @@ code {font-size: 0.75em;}
                                     -o-border-radius: 40px;
                                     -ms-border-radius: 40px;
                                     border-radius: 40px;
+                                    -webkit-box-shadow: none;
+                                    -moz-box-shadow: none;
+                                    -o-box-shadow: none;
+                                    -ms-box-shadow: none;
+                                    box-shadow: none;
                                 }
 
                         .single #post-author h5 {
