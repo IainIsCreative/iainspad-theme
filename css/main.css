@@ -363,7 +363,7 @@ code {font-size: 0.75em;}
 
                             #post-container article section.post-entry > ul {list-style-type: disc; padding: 0 0 20px 25px;}
 
-                                #post-container article section.post-entry > ol li, #post-container article section.post-entry > ul li {}
+                                #post-container article section.post-entry > ol li, #post-container article section.post-entry > ul li {margin: 0 0 10px;}
 
                                 article section.post-entry img {
                                     -webkit-border-radius: 5px;
