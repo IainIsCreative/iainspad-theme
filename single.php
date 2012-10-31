@@ -20,7 +20,7 @@
 					<section class="post-entry">
 						<aside class="metadata">
 							<ul>
-								<li class="date"><a href="<?php $year = get_the_time("Y"); echo get_month_link("$year"); ?>"><?php the_time("M jS, 'y"); ?></a></li>
+								<li class="date"><a href="<?php echo get_year_link(); ?>"><?php the_time("M jS, 'y"); ?></a></li>
 								<li class="comments"><a href="<?php the_permalink(); ?>/#comments"><?php comments_number('No Comments', '1 Comment', '% Comments'); ?></a></li>
 								<?php if(get_the_author_meta('twitter') != '') { ?>
 								<li class="tweet-button"><a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink(); ?>" data-text="<?php the_title(); ?>" data-via="<?php the_author_meta('twitter'); ?>" data-related="iainspad">Tweet</a>
