@@ -35,8 +35,10 @@
 			</section>
 			<?php } elseif(is_page('Contact')) { ?>
 				<section class="contact">
-					<h4>Other ways of Contact</h4>
-					<p>I love hearing from people! I like discussing Design, Development, and ideas. I can be found on any of the following sites, and would love to hear from you. You may also want to check out the links belo, I'm quite social.</p>
+					<noscript>
+						<h4>Other ways of Contact</h4>
+						<p>I love hearing from people! I like discussing Design, Development, and ideas. I can be found on any of the following sites, and would love to hear from you. You may also want to check out the links belo, I'm quite social.</p>
+					</noscript>
 				</section>
 				<section class="twitter">
 					<h4>Twitter</h4>
