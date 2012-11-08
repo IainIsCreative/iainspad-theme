@@ -402,10 +402,6 @@ code {font-size: 0.75em;}
                                     padding: 0 5px 0 0;
                                 }
 
-                                #post-container article section cite a {
-                                    color: #79211a;
-                                }
-
 
 /*---List styles--*/
 
@@ -1579,6 +1575,10 @@ nav#portfolio-navigation {
 .js .page #sidebar-left section.contact {display: none;}
 
 .js .ampersand {font-style: italic; font-family: "adobe-caslon-pro", Georgia, serif; padding: 0 4px 0 0; line-height: 0.9;}
+
+/*---if Javascript is turned OFF---*/
+
+.no-js body {font: normal 1em/20px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;}
 
 /*---Wordpress Admin Bar---*/
 
