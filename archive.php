@@ -38,9 +38,6 @@
 		<?php } else { ?>
 		<div id="blog-content">
 			<div id="post-container">
-			<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-			$cat_id = get_cat_ID('portfolio');	
-			query_posts("showposts=3&exclude=3&cat=-$cat_id&paged=$paged"); ?>
 			<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 				<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 					<h1 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
@@ -74,9 +71,8 @@
 					</ul>
 				</nav>
 			<?php else : ?>
-			<h3>Sorry! Nothing found for <?php echo get_search_query(); ?></h3>
+			<h3>Sorry! Nothing found for <?php if(is_category()) { single_cat_title(); } elseif(is_tag()) { single_tag_title(); } elseif(is_month()) { the_time('F Y'); } elseif(is_year()) { the_time('Y'); } ?>.</h3>
 			<?php endif; ?>
-			<?php wp_reset_query(); ?>
 			</div>
 			<?php get_sidebar(); ?>
 		</div>
