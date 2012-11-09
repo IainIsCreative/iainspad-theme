@@ -1819,7 +1819,7 @@ html.lt-ie9 nav.social-networking ul li a.facebook:active {background-position: 
 
     #blog-content {padding: 0 240px 0 0;}
 
-    #sidebar {margin: 16px -240px 0 0;}
+    #sidebar {margin: 16px -240px 60px 0;}
 
     #sidebar-left {
         width: 240px;
