@@ -956,7 +956,7 @@ code {font-size: 0.75em;}
                     #sidebar {
                         width: 200px;
                         float: right;
-                        margin: 15px -240px 0 0;
+                        margin: 15px -240px 60px 0;
                         display: none;
                     }
 
