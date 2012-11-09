@@ -40,7 +40,7 @@
 			<div id="post-container">
 			<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 			$cat_id = get_cat_ID('portfolio');	
-			query_posts("showposts=3&exclude=$cat_id&paged=$paged"); ?>
+			query_posts("showposts=3&exclude=3&cat=-$cat_id&paged=$paged"); ?>
 			<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 				<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 					<h1 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
