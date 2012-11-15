@@ -1,5 +1,5 @@
 			<aside id="sidebar">
-				<nav id="blog-navigation">
+				<nav>
 					<h4>Categories</h4>
 					<ul>
 						<li><a href="/category/articles">Articles</a></li>
