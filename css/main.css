@@ -1988,6 +1988,18 @@ html.lt-ie9 nav.social-networking ul li a.facebook:active {background-position: 
         background-size: 50px 40px;
     }
 
+    #blog-navigation ul li a {
+        background-size: 50px 40px;
+    }
+
+    #blog-navigation ul li:first-child a {
+        background: url('../img/retina/prev_arrow.png') center center no-repeat transparent;
+    }
+
+    #blog-navigation ul li:last-child a {
+        background: url('../img/retina/next_arrow.png') center center no-repeat transparent;
+    }
+
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 900px), only screen and (min--moz-device-pixel-ratio: 1.5) and (min-width: 900px), only screen and (min-device-pixel-ratio: 1.5) and (min-width: 900px), only screen and (min-resolution: 192dpi) and (min-width: 900px), only screen and (min-resolution: 2dppx) and (min-width: 900px) {
