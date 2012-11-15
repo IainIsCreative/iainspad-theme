@@ -347,6 +347,7 @@ code {font-size: 0.75em;}
                             }
 
                             #blog-navigation {
+                                height: 40px;
                                 padding: 0 0 20px;
                             }
 
