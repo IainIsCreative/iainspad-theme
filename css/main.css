@@ -345,6 +345,43 @@ code {font-size: 0.75em;}
                                 -ms-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
                                 box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
                             }
+
+                            #blog-navigation {
+
+                            }
+
+                                #blog-navigation ul li a {
+                                    width: 50px;
+                                    height: 40px;
+                                    text-indent: -3333px;
+                                    display: block;
+                                    overflow: hidden;
+                                    opacity: 0.8;
+                                }
+
+                                #blog-navigation ul li a:hover {
+                                    opacity: 1;
+                                }
+
+                                    #blog-navigation ul li:first-child a {
+                                        background: url('../img/prev_arrow.png') center center no-repeat transparent;
+                                        margin: 0 0 0 20px;
+                                        float: left;
+                                    }
+
+                                    #blog-navigation ul li:first-child a:hover {
+                                        margin: 0 0 0 10px;
+                                    }
+
+                                    #blog-navigation ul li:last-child a {
+                                        background: url('../img/prev_arrow.png') center center no-repeat transparent;
+                                        margin: 0 20px 0 0;
+                                        float: right;
+                                    }
+
+                                    #blog-navigation ul li:last-child a:hover {
+                                        margin: 0 10px 0 0;
+                                    }
 /*---Posts---*/
 
                             #post-container article section.post-entry > p:nth-of-type(1) {
