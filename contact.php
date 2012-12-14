@@ -73,10 +73,10 @@ if(isset($_POST['submitted'])) {
 				<div class="error">
 					<h5>Sorry dude! There was an error processing the form.</h5>
 					<ul>
-						<?php if($nameError = '') { ?>
+						<?php if($nameError) { ?>
 						<li><?=$nameError; ?></li>
 						<?php } ?>
-						<?php if($emailError = '') { ?>
+						<?php if($emailError) { ?>
 						<li><?=$emailError; ?></li>
 						<?php } ?>
 						<?php if($messageError) { ?>
