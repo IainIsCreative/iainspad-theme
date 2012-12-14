@@ -41,7 +41,7 @@ if(isset($_POST['submitted'])) {
 		$emailTo = 'iainspad@gmail.com';
 		$subject = 'New E-mail from ' .$name. '!';
 		$body = "Name: $name \n\n Email: $email \n\n Message: $message";
-		$headers = 'From http:iainspad.com' . "\r\n" . 'Reply-To' . $email;
+		$headers = 'From http:iainspad.com' . "\r\n" . 'Reply-To ' . $email;
 
 		mail($emailTo, $subject, $body, $headers);
 		$emailSent = true;
