@@ -30,8 +30,8 @@ if(isset($_POST['submitted'])) {
 		$messageError = ' Your message must have more than 20 Characters';
 		$hasError = true;
 	} else {
-		if(function_exists('striplashes')) {
-			$message = striplashes(trim($_POST['message']));
+		if(function_exists('stripslashes')) {
+			$message = stripslashes(trim($_POST['message']));
 		} else {
 			$message = trim($_POST['message']);
 		}
@@ -89,8 +89,8 @@ if(isset($_POST['submitted'])) {
 					<input type="text" id="name" class="required" name="mailname" placeholder="Your Name" required="required" value="<?php if(isset($_POST['mailname'])) echo $_POST['mailname']; ?>" />
 					<input type="email" id="email" class="required" name="email" placeholder="Your E–mail address" required="required" value="<?php if(isset($_POST['email'])) echo $_POST['email']; ?>" />
 					<textarea id="message" class="required" name="message" placeholder="Your Message must be greater than 20 characters" required="required" data-minlength="20"><?php if(isset($_POST['message'])) {
-						if(function_exists('striplashes')) {
-							echo striplashes($_POST['message']);
+						if(function_exists('stripslashes')) {
+							echo stripslashes($_POST['message']);
 						} else {
 							echo $_POST['message'];
 						}
