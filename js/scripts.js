@@ -251,10 +251,11 @@ $(document).ready(function() {
 					$(formError).append("<li>You haven't entered a valid E-mail address.</li>");
 					hasError = true;
 				}
-			} else if($('[data-minlength]').val().length < 20) {
-				$(formError).append("<li>Your message must be greater than 20 characters.</li>");
+			} */ else if($('[data-minlength]').val().length < 20) {
+				$('#contact-form').before('<div class="error"><h5>Sorry Dude! There was an error processing your form</h5><ul></ul></div>');
+				$('.error ul').append("<li>Your message must be greater than 20 characters.</li>");
 				hasError = true;
-			} */
+			}
 		});
 
 		if(!hasError) {
