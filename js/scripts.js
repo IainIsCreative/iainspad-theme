@@ -236,37 +236,5 @@ $(document).ready(function() {
 
 	//Form Validation
 
-	$('form#contact-form').submit(function() {
-		var hasError = false;
-
-		$('[required="required"]').each(function() {
-			if(jQuery.trim($(this).val()) == '') {
-				var errorText = $(this).attr('id');
-				$('#contact-form').before('<div class="error"><h5>Sorry Dude! There was an error processing your form</h5><ul></ul></div>');
-				$('.error ul').append('<li>You have not written a ' + errorText + '.</li>');
-				hasError = true;
-			} /* else if($('#email')) {
-				var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
-				if(!emailReg.test(jQuery.trim($(this).val()))) {
-					$(formError).append("<li>You haven't entered a valid E-mail address.</li>");
-					hasError = true;
-				}
-			} */ else if($('[data-minlength]').val().length < 20) {
-				$('#contact-form').before('<div class="error"><h5>Sorry Dude! There was an error processing your form</h5><ul></ul></div>');
-				$('.error ul').append("<li>Your message must be greater than 20 characters.</li>");
-				hasError = true;
-			}
-		});
-
-		if(!hasError) {
-			var input = $(this).serialize();
-			var name = $('input[name="mailname"]').val();
-			$.post($(this).attr('action'),input, function(data) {
-				$('form#contact-form').before('<div class="success"><h5>Thanks ' + name + '! Your E&ndash;Mail has been sent.</h5></div>');
-			});
-		}
-
-		return false;
-	});
 
 });
