@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
 	//Remove the no-js class if it exists
 	var docElement = document.documentElement;
 	docElement.className = docElement.className.replace(/\bno-js\b/, 'js');
@@ -236,57 +237,56 @@ $(document).ready(function() {
 
 	//Form Validation via AJAX
 
+	$('.error').hide();
 
 	$(function() {
 
 		$('#contact-form').submit(function() {
+
 			var form = $('form#contact-form'),
 				name = $('input#name'),
 				email = $('input#email'),
 				message = $('textarea#message'),
 				hasError = false;
 
-				/* if(name.val() == '' || email.val() == '' || email.val() == /^([w-.]+@([w-]+.)+[w-]{2,4})?$/ || message.val() == '' || message.val().length < 20) {
-					hasError = true;
-				}
-
-				if(hasError = true) {
-					form.before('<div class="error"><h5>Sorry dude! There was an error processing your form.</h5><ul></ul></div>');
-				}
-
 				if(name.val() == '') {
+					hasError = true;
+					$('.error').show();
 					$('.error ul').append('<li>You have not entered a name.</li>');
 					return false;
 				}
 
-				if(email.val() == '') {
+				if (email.val() == '') {
+					hasError = true;
+					$('.error').show();
 					$('.error ul').append('<li>You haven\'t entered an E-mail address.</li>');
-					return false;
-				} else if(email.val() == /^([w-.]+@([w-]+.)+[w-]{2,4})?$/) {
-					$('.error ul').append('<li>You haven\'t entered a valid E-mail address.');
 					return false;
 				}
 
 				if(message.val() == '') {
+					hasError = true;
+					$('.error').show();
 					$('.error ul').append('<li>You haven\'t entered a message.</li>');
 					return false;
 				} else if(message.val().length < 20) {
+					hasError = true;
+					$('.error').show();
 					$('.error ul').append('<li>Your message must be greater than 20 characters.</li>');
 					return false;
-				} */
+				}
 
 				var dataString = $(this).serialize();
 
-				if(!hasError) {
-					$.ajax({
-						type: "POST",
-						url: form.attr('action'),
-						data: dataString,
-						success: function() {
-							$(form).before('<div class="success"><h5>Thanks ' + name.val() + '! Your E-mail has been sent.</h5></div>').fadeIn('normal');
-						}
-					});
-				}
+				$.ajax({
+					type: "POST",
+					url: form.attr('action'),
+					data: dataString,
+					success: function() {
+						$(form).before('<div class="success"><h5>Thanks ' + name.val() + '! Your E-mail has been sent.</h5></div>').fadeIn('normal');
+						$('.error').hide();
+					}
+				});
+
 			return false;
 		});
 
