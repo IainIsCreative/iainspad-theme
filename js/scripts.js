@@ -277,7 +277,7 @@ $(document).ready(function() {
 
 				var dataString = 'name=' + name.val() + '&email=' + email.val() + '&message=' + message.val();
 
-				if(hasError) {
+				if(!hasError) {
 					$.ajax({
 						type: "POST",
 						url: form.attr('action'),
