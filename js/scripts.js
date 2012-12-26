@@ -239,8 +239,6 @@ $(document).ready(function() {
 
 	$('.error').hide();
 
-	$(function() {
-
 		$('#contact-form').submit(function() {
 
 			var form = $('form#contact-form'),
@@ -288,7 +286,5 @@ $(document).ready(function() {
 				});
 			return false;
 		});
-
-	});
 
 });
