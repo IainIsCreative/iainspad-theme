@@ -69,10 +69,10 @@ if(isset($_POST['submitted'])) {
 				</form>
 				<?php } else { ?>
 				<?php the_content(); ?>
-				<?php if(isset($hasError)) { ?>
 				<div class="error">
 					<h5>Sorry dude! There was an error processing the form.</h5>
 					<ul>
+						<?php if(isset($hasError)) { ?>
 						<?php if($nameError) { ?>
 						<li><?=$nameError; ?></li>
 						<?php } ?>
@@ -82,9 +82,9 @@ if(isset($_POST['submitted'])) {
 						<?php if($messageError) { ?>
 						<li><?=$messageError; ?></li>
 						<?php } ?>
+						<?php } ?>
 					</ul>
 				</div>
-				<?php } ?>
 				<form id="contact-form" action="<?php the_permalink(); ?>" method="post">
 					<input type="text" id="name" class="required" name="mailname" placeholder="Your Name" required="required" value="<?php if(isset($_POST['mailname'])) echo $_POST['mailname']; ?>" />
 					<input type="email" id="email" class="required" name="email" placeholder="Your E–mail address" required="required" value="<?php if(isset($_POST['email'])) echo $_POST['email']; ?>" />
