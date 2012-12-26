@@ -239,14 +239,14 @@ $(document).ready(function() {
 
 	$(function() {
 
-		$('#contact-form input[type="submit"]').click(function() {
+		$('#contact-form').submit(function() {
 			var form = $('form#contact-form'),
 				name = $('input#name'),
 				email = $('input#email'),
 				message = $('textarea#message'),
 				hasError = false;
 
-				if(name.val() == '' || email.val() == '' || email.val() == /^([w-.]+@([w-]+.)+[w-]{2,4})?$/ || message.val() == '' || message.val().length < 20) {
+				/* if(name.val() == '' || email.val() == '' || email.val() == /^([w-.]+@([w-]+.)+[w-]{2,4})?$/ || message.val() == '' || message.val().length < 20) {
 					hasError = true;
 				}
 
@@ -273,9 +273,9 @@ $(document).ready(function() {
 				} else if(message.val().length < 20) {
 					$('.error ul').append('<li>Your message must be greater than 20 characters.</li>');
 					return false;
-				}
+				} */
 
-				var dataString = 'name=' + name.val() + '&email=' + email.val() + '&message=' + message.val();
+				var dataString = $(this).serialize();
 
 				if(!hasError) {
 					$.ajax({
@@ -287,6 +287,7 @@ $(document).ready(function() {
 						}
 					});
 				}
+			return false;
 		});
 
 	});
