@@ -256,7 +256,7 @@ $(document).ready(function() {
 					return false;
 				}
 
-				if (email.val() == '') {
+				if(email.val() == '') {
 					hasError = true;
 					$('.error').show();
 					$('.error ul').append('<li>You haven\'t entered an E-mail address.</li>');
@@ -282,11 +282,10 @@ $(document).ready(function() {
 					url: form.attr('action'),
 					data: dataString,
 					success: function() {
-						$(form).before('<div class="success"><h5>Thanks ' + name.val() + '! Your E-mail has been sent.</h5></div>').fadeIn('normal');
+						$(form).before('<div class="success"><h5>Thanks ' + name.val() + '! Your E-mail has been sent.</h5></div>');
 						$('.error').hide();
 					}
 				});
-
 			return false;
 		});
 
