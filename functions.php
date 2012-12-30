@@ -214,12 +214,60 @@ function blog_comments($comment, $args, $depth) {
 
 //Add body class to every page EXCEPT blog post
 function extra_body_classes($classes) {
+	//Let's find us some user agents, shall we?
+	$browser = $_SERVER['HTTP_USER_AGENT'];
+
+	//Now to find the operating system
+	if(preg_match("/Mac/", $browser)) {
+		$classes[] = 'mac';
+	} elseif(preg_match("/Windows/", $browser)) {
+		$classes[] = 'pc';
+	} elseif(preg_match("/Linux/", $browser)) {
+		$classes[] = 'linux';
+	} elseif(preg_match("/iPhone/" || "/iPad/", $browser)) {
+		$classes[] = 'ios';
+	} elseif(preg_match("/Android/", $browser)) {
+		$classes[] = 'android';
+	} elseif(preg_match("/BlackBerry/", $browser)) {
+		$classes[] = 'blackberry';
+	} elseif(preg_match("/Windows Phone/", $browser)) {
+		$classes[] = 'windows-phone';
+	} else {
+		$classes[] = 'unknown-os';
+	}
+
+	//Now the browsers
+	if(preg_match("/Chrome/", $browser)) {
+		$classes[] = 'chrome';
+	} elseif(preg_match("/Safari", $browser)) {
+		$classes[] = 'safari';
+	} elseif(preg_match("/Opera/", $browser)) {
+		$classes[] = 'opera';
+	} elseif(preg_match("/Firefox/", $browser)) {
+		$classes[] = 'firefox';
+	} elseif(preg_match("/MSIE/")) {
+		//Seperate each IE version
+		if(preg_match("/MSIE 7.0/", $browser)) {
+			$classes[] = 'ie7';
+		} elseif(preg_match("/MSIE 8.0/", $browser)) {
+			$classes[] = 'ie8';
+		} elseif(preg_match("/MSIE 9.0/", $browser)) {
+			$classes[] = 'ie9';
+		} elseif(preg_match("/MSIE 10.0/", $browser)) {
+			$classes[] = 'ie7';
+		}
+	}
+
+
+	//Just to seperate the blog from the rest of the site
 	if(!is_single() && !is_category('portfolio')) {
 		$classes[] = 'site';
 	}
+
 	return $classes;
 }
 add_filter('body_class','extra_body_classes');
+
 
 //Login file linking
 function custom_login_files() {
