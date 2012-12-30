@@ -214,6 +214,12 @@ function blog_comments($comment, $args, $depth) {
 
 //Add body class to every page EXCEPT blog post
 function extra_body_classes($classes) {
+
+	//Just to seperate the blog from the rest of the site
+	if(!is_single() && !is_category('portfolio')) {
+		$classes[] = 'site';
+	}
+
 	//Let's find us some user agents, shall we?
 	$browser = $_SERVER['HTTP_USER_AGENT'];
 
@@ -234,6 +240,17 @@ function extra_body_classes($classes) {
 		$classes[] = 'windows-phone';
 	} else {
 		$classes[] = 'unknown-os';
+	}
+
+	//How about Engines?
+	if(preg_match("/Gecko/", $browser) && !preg_match("/AppleWebKit/", $browser)) {
+		$classes[] = 'gecko';
+	} elseif(preg_match("/AppleWebKit/", $browser)) {
+		$classes[] = 'webkit';
+	} elseif(preg_match("/Presto/", $browser)) {
+		$classes[] = 'presto';
+	} elseif(preg_match("/Trident/", $browser)) {
+		$classes[] = 'trident';
 	}
 
 	//Now the browsers
@@ -258,12 +275,7 @@ function extra_body_classes($classes) {
 		}
 	}
 
-
-	//Just to seperate the blog from the rest of the site
-	if(!is_single() && !is_category('portfolio')) {
-		$classes[] = 'site';
-	}
-
+	//LET'S DO THIS FOO'.
 	return $classes;
 }
 add_filter('body_class','extra_body_classes');
