@@ -256,13 +256,13 @@ function extra_body_classes($classes) {
 	//Now the browsers
 	if(preg_match("/Chrome/", $browser)) {
 		$classes[] = 'chrome';
-	} elseif(preg_match("/Safari", $browser)) {
+	} elseif(preg_match("/Safari/", $browser)) {
 		$classes[] = 'safari';
 	} elseif(preg_match("/Opera/", $browser)) {
 		$classes[] = 'opera';
 	} elseif(preg_match("/Firefox/", $browser)) {
 		$classes[] = 'firefox';
-	} elseif(preg_match("/MSIE/")) {
+	} elseif(preg_match("/MSIE/", $browser)) {
 		//Seperate each IE version
 		if(preg_match("/MSIE 7.0/", $browser)) {
 			$classes[] = 'ie7';
