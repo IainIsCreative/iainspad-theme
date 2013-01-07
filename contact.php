@@ -69,7 +69,7 @@ if(isset($_POST['submitted'])) {
 				</form>
 				<?php } else { ?>
 				<?php the_content(); ?>
-				<div class="error" style="<?php if(!isset($hasError)) { ?>display: none;<?php } ?>" >
+				<div class="error" <?php if(!isset($hasError)) { ?>style="display: none;"<?php } ?>>
 					<h5>Sorry dude! There was an error processing the form.</h5>
 					<ul>
 						<?php if(isset($hasError)) { ?>
