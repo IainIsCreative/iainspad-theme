@@ -307,4 +307,6 @@ function custom_login_header_title() {
 	return get_option('blogname');
 }
 add_filter('login_headertitle','custom_login_header_title');
+
+
 ?>
