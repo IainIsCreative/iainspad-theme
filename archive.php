@@ -4,14 +4,14 @@
 		<?php } elseif(is_tag()) { ?>
 		<h3 class="archive-title">Items tagged <span class="teal"><?php single_tag_title(); ?></span></h3>
 		<?php } elseif(is_month()) { ?>
-		<h3 class="archive-title">Items from <span class="burgundy"><?php the_time('F'); ?>, <span class="cyan"><?php the_time("Y"); ?></span></span></h3>
+		<h3 class="archive-title">Posts from <span class="burgundy"><?php the_time('F'); ?>, <span class="cyan"><?php the_time("Y"); ?></span></span></h3>
 		<?php } elseif(is_year()) { ?>
 		<h3 class="archive-title">Items from <span class="cyan"><?php the_time('Y'); ?></span></h3>
 		<?php } ?>
 		<?php if(in_category('Portfolio')) { ?>
-		<ol id="portfolio" <?php post_class(); ?>>
+		<ol id="portfolio">
 		<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-			<li>
+			<li <?php post_class(); ?>>
 			<?php if(has_post_thumbnail()) { ?>
 				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="thumbnail">
 					<div class="thumbnail-image">
@@ -36,8 +36,6 @@
 		<?php endwhile; endif; ?>
 		</ol>
 		<?php } else { ?>
-		<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-		query_posts("showposts=6&cat=-3&paged=$paged"); ?>
 		<div id="blog-content">
 			<div id="post-container">
 			<?php if(have_posts()) : while(have_posts()) : the_post(); ?>

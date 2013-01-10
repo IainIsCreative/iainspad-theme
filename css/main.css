@@ -383,6 +383,15 @@ code {font-size: 0.75em;}
                                     #blog-navigation ul li:last-child a:hover {
                                         margin: 0 10px 0 0;
                                     }
+
+        .archive .category-portfolio, .archive.tag .category-notes, .archive.tag .category-archives, .archive.tag .category-inspiration, .archive.tag .category-coding, .archive.tag .category-case-studies, .archive.tag .category-design {
+            display: none;
+        }
+
+        .archive.tag .category-portfolio {
+            display: block;
+        }
+
 /*---Posts---*/
 
                             #post-container article section.post-entry > p:nth-of-type(1) {

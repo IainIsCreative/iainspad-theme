@@ -308,5 +308,4 @@ function custom_login_header_title() {
 }
 add_filter('login_headertitle','custom_login_header_title');
 
-
 ?>
