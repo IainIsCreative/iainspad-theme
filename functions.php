@@ -230,11 +230,7 @@ function extra_body_classes($classes) {
 		$classes[] = 'pc';
 	} elseif(preg_match("/Linux/", $browser)) {
 		$classes[] = 'linux';
-	} elseif(preg_match("/iPhone/", $browser)) {
-		$classes[] = 'ios';
-	} elseif(preg_match("/iPad/", $browser)) {
-		$classes[] = 'ios';
-	} elseif(preg_match("/iPod/", $browser)) {
+	} elseif(preg_match("/iPhone/", $browser) || preg_match("/iPod/", $browser) || preg_match("/iPad/", $browser)) {
 		$classes[] = 'ios';
 	} elseif(preg_match("/Android/", $browser)) {
 		$classes[] = 'android';

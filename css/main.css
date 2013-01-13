@@ -291,6 +291,8 @@ code {font-size: 0.75em;}
                                 text-shadow: 0px 1px 1px rgba(0,0,0,0.4);
                             }
 
+                            #main #post-container article h4 {font: normal 400 1.1875em/30px "ff-meta-serif-web-pro", Georgia, Time New Roman, serif; margin: 0 0 10px; color: #79211a;}
+
                             #post-container article section aside {
                                 width: 100%;
                                 position: relative;
