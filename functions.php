@@ -179,13 +179,13 @@ remove_action('wp_head', 'rsd_link');
 
 //Remove the Portfolio Category from being searched
 
-function search_filter($query) {
+/* function search_filter($query) {
 	if($query->is_search) {
-		$query->set ('cat','3');
+		$query->set('cat','3');
 	}
 	return $query;
 }
-add_filter('pre_get_posts', 'search_filter');
+add_filter('pre_get_posts', 'search_filter'); */
 
 
 //Custom Comment Design

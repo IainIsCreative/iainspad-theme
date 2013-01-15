@@ -2,9 +2,10 @@
 		<h3 class="archive-title">Search results for <span class="teal"><?php echo get_search_query(); ?></span></h3>
 		<div id="blog-content">
 			<div id="post-container">
-			<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+			<?php 
+			$page = (get_query_var('paged')) ? get_query_var('paged') : 1;
 			$s = get_query_var('s');
-			query_posts("showposts=6&s=$s&cat=-3&paged=$paged"); ?>
+			query_posts("showposts=6&s=$s&cat=-3&paged=$page"); ?>
 			<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 				<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 					<h1 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
