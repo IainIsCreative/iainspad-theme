@@ -93,7 +93,7 @@ $(document).ready(function() {
 			var rightNow = new Date();
 			var then = new Date(dateString);
 
-			if ($.browser.msie) {
+			if (navigator.userAgent.match(/MSIE/i)) {
 				then = Date.parse(dateString.replace(/( \+)/, ' UTC$1'));
 			}
 
