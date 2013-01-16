@@ -14,7 +14,8 @@ function add_twitterUser($contactmethods) {
 }
 add_filter('user_contactmethods', 'add_twitterUser', 10, 1);
 
-if(!is_admin()) {
+
+//Load jQuery from Google's CDN rather than locally, however should the CDN fail, try loading the local version instead.
 	$url = "http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js";
 	$test_url = @fopen($url, 'r');
 	if($test_url !== false) {
@@ -32,7 +33,6 @@ if(!is_admin()) {
 		}
 		add_action('wp_enqueue_scripts','load_local_jquery');
 	}
-}
 
 function respond_js() {
 	wp_register_script('respondjs', (get_template_directory_uri().'/js/respond.min.js'));
@@ -176,16 +176,6 @@ add_action('save_post', 'post_customfiles_nonce');
 
 remove_action('wp_head', 'wlwmanifest_link');
 remove_action('wp_head', 'rsd_link');
-
-//Remove the Portfolio Category from being searched
-
-/* function search_filter($query) {
-	if($query->is_search) {
-		$query->set('cat','3');
-	}
-	return $query;
-}
-add_filter('pre_get_posts', 'search_filter'); */
 
 
 //Custom Comment Design
