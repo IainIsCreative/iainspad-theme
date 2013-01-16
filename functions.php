@@ -18,7 +18,7 @@ add_filter('user_contactmethods', 'add_twitterUser', 10, 1);
 //Load jQuery from Google's CDN.
 function google_jquery() {
 	wp_deregister_script('jquery');
-	wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"), false, '1.8.0');
+	wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"), false, '1.9.0');
 	wp_enqueue_script('jquery');	
 }
 add_action('wp_enqueue_scripts','google_jquery');
