@@ -15,24 +15,26 @@ function add_twitterUser($contactmethods) {
 add_filter('user_contactmethods', 'add_twitterUser', 10, 1);
 
 
-//Load jQuery from Google's CDN rather than locally, however should the CDN fail, try loading the local version instead.
-	$url = "http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js";
-	$test_url = @fopen($url, 'r');
-	if($test_url !== false) {
-		function load_external_jquery() {
-			wp_deregister_script('jquery');
-			wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"), false, '1.8.0');
-			wp_enqueue_script('jquery');
-		}
-		add_action('wp_enqueue_scripts','load_external_jquery');
-	} else {
-		function load_local_jquery() {
-			wp_deregister_script('jquery');
-			wp_register_script('jquery', (get_template_directory_uri().'/js/jquery.min.js'), false, '1.8.0');
-			wp_enqueue_script('jquery');
-		}
-		add_action('wp_enqueue_scripts','load_local_jquery');
-	}
+//Load jQuery from Google's CDN.
+function google_jquery() {
+	wp_deregister_script('jquery');
+	wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"), false, '1.8.0');
+	wp_enqueue_script('jquery');	
+}
+add_action('wp_enqueue_scripts','google_jquery');
+
+/*
+
+Hmmm...
+
+function load_local_jquery() {
+	wp_deregister_script('jquery');
+	wp_register_script('jquery', (get_template_directory_uri().'/js/jquery.min.js'), false, '1.8.0');
+	wp_enqueue_script('jquery');
+}
+add_action('wp_enqueue_scripts','load_local_jquery');
+
+*/
 
 function respond_js() {
 	wp_register_script('respondjs', (get_template_directory_uri().'/js/respond.min.js'));
