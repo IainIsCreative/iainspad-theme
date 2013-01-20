@@ -245,11 +245,11 @@ function extra_body_classes($classes) {
 		$classes[] = 'ie';
 		if(stripos($browser, 'msie7.0')) {
 			$classes[] = 'ie7';
-		} elseif(stripos($browser, 'msie8.0') {
+		} elseif(stripos($browser, 'msie8.0')) {
 			$classes[] = 'ie8';
-		} elseif(stripos($browser, 'msie9.0') {
+		} elseif(stripos($browser, 'msie9.0')) {
 			$classes[] = 'ie9';
-		} elseif(stripos($browser, 'msie10.0') {
+		} elseif(stripos($browser, 'msie10.0')) {
 			$classes[] = 'ie10';
 		}
 	}

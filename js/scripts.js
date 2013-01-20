@@ -1,20 +1,9 @@
-$(window).load(function() {
-
-	var page = $('#wrapper');
-
-	//Page animation on load
-	setTimeout(function() {
-		$('html.js #wrapper').fadeIn(600);
-	}, 200);
-});
-
 $(document).ready(function() {
 
 	//Remove the no-js class if it exists
-	var docElement = document.documentElement;
-	docElement.className = docElement.className.replace(/\bno-js\b/, 'js');
+	var b = document.documentElement;
+	b.className = b.className.replace(/\bno-js\b/, 'js');
 
-	//Put the page into a variable
 	var page = $('#wrapper');
 
 	//If it's a HiDPI display, replace the favicon with the @2x favicon
@@ -180,6 +169,9 @@ $(document).ready(function() {
 	prettyPrint();
 
 	//Page Animations
+	
+		//Page animation on load
+		$(page).delay(500).animate({opacity: 1}, 600);
 
 		//UX controls
 			//---Left and Right key navigation between posts
@@ -203,7 +195,7 @@ $(document).ready(function() {
 					}).animate(300);
 				}
 				if (url) {
-					$(page).delay(100).fadeOut(400);
+					$(page).delay(100).animate({opacity: 0}, 600);
 					setTimeout(function() {window.location = url}, 600);
 				}
 			});
