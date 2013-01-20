@@ -1615,7 +1615,7 @@ nav#portfolio-navigation {
 
 /*---If Javascript is ON---*/
 
-.js #wrapper {opacity: 0;}
+/*.js #wrapper {display: none;}*/
 
 .js nav#portfolio-navigation {display: none;}
 
@@ -1628,6 +1628,8 @@ nav#portfolio-navigation {
 /*---if Javascript is turned OFF---*/
 
 .no-js body {font: normal 1em/20px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;}
+
+html.no-js #wrapper {display: block!important;}
 
 /*---Wordpress Admin Bar---*/
 
