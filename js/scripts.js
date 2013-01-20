@@ -4,6 +4,7 @@ $(document).ready(function() {
 	var b = document.documentElement;
 	b.className = b.className.replace(/\bno-js\b/, 'js');
 
+	//Put the wrapper in a variable
 	var page = $('#wrapper');
 
 	//If it's a HiDPI display, replace the favicon with the @2x favicon
