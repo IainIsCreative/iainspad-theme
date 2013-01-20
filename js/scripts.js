@@ -1,15 +1,20 @@
+$(window).load(function() {
+
+	var page = $('#wrapper');
+
+	//Page animation on load
+	setTimeout(function() {
+		$('html.js #wrapper').fadeIn(600);
+	}, 200);
+});
+
 $(document).ready(function() {
 
 	//Remove the no-js class if it exists
 	var docElement = document.documentElement;
 	docElement.className = docElement.className.replace(/\bno-js\b/, 'js');
 
-	//Also add useragent and platform data attributes to the html element
-	//---see http://rog.ie/post/9089341529/html5boilerplatejs
-
-	docElement.setAttribute('data-useragent', navigator.userAgent);
-	docElement.setAttribute('data-platform', navigator.platform);
-
+	//Put the page into a variable
 	var page = $('#wrapper');
 
 	//If it's a HiDPI display, replace the favicon with the @2x favicon
@@ -175,9 +180,6 @@ $(document).ready(function() {
 	prettyPrint();
 
 	//Page Animations
-	
-		//Page animation on load
-		$(page).delay(500).animate({opacity: 1}, 600);
 
 		//UX controls
 			//---Left and Right key navigation between posts
@@ -201,7 +203,7 @@ $(document).ready(function() {
 					}).animate(300);
 				}
 				if (url) {
-					$(page).delay(100).animate({opacity: 0}, 600);
+					$(page).delay(100).fadeOut(400);
 					setTimeout(function() {window.location = url}, 600);
 				}
 			});
