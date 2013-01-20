@@ -204,7 +204,7 @@ function blog_comments($comment, $args, $depth) {
 	endswitch;
 }
 
-//Add body class to every page EXCEPT blog post
+//Add extra body classes
 function extra_body_classes($classes) {
 
 	//Just to seperate the blog from the rest of the site
@@ -212,60 +212,61 @@ function extra_body_classes($classes) {
 		$classes[] = 'site';
 	}
 
-	//Let's find us some user agents, shall we?
-	$browser = $_SERVER['HTTP_USER_AGENT'];
+	//---Semantic classes!
+	global $is_IE, $is_opera, $is_safari, $is_chrome, $is_gecko;
 
-	//Now to find the operating system
-	if(preg_match("/Mac/", $browser)) {
+	$browser = strtolower($_SERVER['HTTP_USER_AGENT']);
+
+	//---Find the devices first
+	if(stripos($browser, 'ipod, iphone, ipad')) {
+		array_push($classes, 'mobile', 'ios');
+	} elseif(stripos($browser, 'android')) {
+		array_push($classes, 'mobile', 'android');
+	} elseif(stripos($browser, 'mac')) {
 		$classes[] = 'mac';
-	} elseif(preg_match("/Windows/", $browser)) {
-		$classes[] = 'pc';
-	} elseif(preg_match("/Linux/", $browser)) {
+	} elseif(stripos($browser, 'linux')) {
 		$classes[] = 'linux';
-	} elseif(preg_match("/iPhone/", $browser) || preg_match("/iPod/", $browser) || preg_match("/iPad/", $browser)) {
-		$classes[] = 'ios';
-	} elseif(preg_match("/Android/", $browser)) {
-		$classes[] = 'android';
-	} elseif(preg_match("/BlackBerry/", $browser)) {
-		$classes[] = 'blackberry';
-	} elseif(preg_match("/Windows Phone/", $browser)) {
-		$classes[] = 'windows-phone';
-	} else {
-		$classes[] = 'unknown-os';
+	} elseif(stripos($browser, 'windows')) {
+		$classes[] = 'pc';
+	} elseif(stripos($browser, 'blackberry')) {
+		array_push($classes, 'mobile', 'blackberry');
 	}
 
-	//How about Engines?
-	if(preg_match("/Gecko/", $browser) && !preg_match("/AppleWebKit/", $browser)) {
-		$classes[] = 'gecko';
-	} elseif(preg_match("/AppleWebKit/", $browser)) {
-		$classes[] = 'webkit';
-	} elseif(preg_match("/Presto/", $browser)) {
-		$classes[] = 'presto';
-	} elseif(preg_match("/Trident/", $browser)) {
-		$classes[] = 'trident';
-	}
-
-	//Now the browsers
-	if(preg_match("/Chrome/", $browser)) {
+	//---Browser and their versions
+	if($is_chrome) {
 		$classes[] = 'chrome';
-	} elseif(preg_match("/Safari/", $browser)) {
+	} elseif($is_safari) {
 		$classes[] = 'safari';
-	} elseif(preg_match("/Opera/", $browser)) {
-		$classes[] = 'opera';
-	} elseif(preg_match("/Firefox/", $browser)) {
+	} elseif($is_gecko && stripos($browser, 'firefox')) {
 		$classes[] = 'firefox';
-	} elseif(preg_match("/MSIE/", $browser)) {
-		//Seperate each IE version
-		if(preg_match("/MSIE 7.0/", $browser)) {
+	} elseif($is_opera) {
+		$classes[] = 'opera';
+	} elseif($is_IE) {
+		$classes[] = 'ie';
+		if(stripos($browser, 'msie7.0')) {
 			$classes[] = 'ie7';
-		} elseif(preg_match("/MSIE 8.0/", $browser)) {
+		} elseif(stripos($browser, 'msie8.0') {
 			$classes[] = 'ie8';
-		} elseif(preg_match("/MSIE 9.0/", $browser)) {
+		} elseif(stripos($browser, 'msie9.0') {
 			$classes[] = 'ie9';
-		} elseif(preg_match("/MSIE 10.0/", $browser)) {
-			$classes[] = 'ie7';
+		} elseif(stripos($browser, 'msie10.0') {
+			$classes[] = 'ie10';
 		}
 	}
+
+	//---Browser engine
+	if(stripos($browser, 'webkit')) {
+		$engine = 'webkit';
+	} elseif(stripos($browser, 'gecko') && !stripos($browser, 'webkit')) {
+		$engine = 'gecko';
+	} elseif(stripos($browser, 'presto')) {
+		$engine = 'presto';
+	} elseif(stripos($browser, 'trident')) {
+		$engine = 'trident';
+	}
+
+	$classes[] = $engine;
+
 
 	//LET'S DO THIS FOO'.
 	return $classes;
