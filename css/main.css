@@ -1601,6 +1601,68 @@ nav#portfolio-navigation {
 
     .placeholder {font-style: italic;}/*---For IE and older Browsers---*/
 
+/*---404 Page---*/
+
+    #main article.page-404 {
+        text-align: center;
+        padding: 0 6.3829787234043% 30px;
+    }
+
+        #main article.page-404 hgroup h3 {
+            color: #1b7971;
+            font: 800 6em/100px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0 0 10px;
+            text-shadow: 0px 2px 3px rgba(0,0,0,0.6);
+        }
+
+        #main article.page-404 hgroup h4 {
+            color: #1b7971;
+            font: 600 2em/50px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-shadow: 0px 1px 1px rgba(0,0,0,0.7);
+        }
+
+         article.page-404 form input {
+            background: url('../img/search-404.png') center right no-repeat rgba(34,126,143,0.6);
+            float: left;
+            color: #bee3de;
+            border: 1px solid #28574a;
+            width: 100%;
+            height: 30px;
+            padding: 0 10px;
+            margin: 0 10px 30px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+            border-radius: 3px;
+            -webkit-transition: background 0.3s linear, box-shadow 0.3s ease;
+            -moz-transition: background 0.3s linear, box-shadow 0.3s ease;
+            -ms-transition: background 0.3s linear, box-shadow 0.3s ease;
+            transition: background 0.3s linear, box-shadow 0.3s ease;
+            -webkit-font-smoothing: subpixel-antialiased;
+        }
+
+        article.page-404 form input:hover {
+            -webkit-box-shadow: inset 0px 0px 3px rgba(0,0,0,0.4);
+            -moz-box-shadow: inset 0px 0px 3px rgba(0,0,0,0.4);
+            -o-box-shadow: inset 0px 0px 3px rgba(0,0,0,0.4);
+            -ms-box-shadow: inset 0px 0px 3px rgba(0,0,0,0.4);
+            box-shadow: inset 0px 0px 3px rgba(0,0,0,0.4);
+        }
+
+        article.page-404 form input:focus {
+            background: url('../img/search-404.png') center right no-repeat rgba(34,126,143,0.8);
+            text-shadow: 0px 1px 0px rgba(0,0,0,0.6);
+            -webkit-box-shadow: inset 0px 0px 3px rgba(0,0,0,0.4), 0px 1px 0px #fff;
+            -moz-box-shadow: inset 0px 0px 3px rgba(0,0,0,0.4), 0px 1px 0px #fff;
+            -o-box-shadow: inset 0px 0px 3px rgba(0,0,0,0.4), 0px 1px 0px #fff;
+            -ms-box-shadow: inset 0px 0px 3px rgba(0,0,0,0.4), 0px 1px 0px #fff;
+            box-shadow: inset 0px 0px 3px rgba(0,0,0,0.4), 0px 1px 0px #fff;
+        }
+
 /*---Footer---*/
 
     footer[role="contentinfo"] {
