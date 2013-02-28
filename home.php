@@ -28,5 +28,4 @@
 		<?php endwhile; endif; ?>
 		<?php wp_reset_query(); ?>
 		</ol>
-		<h3 class="availability">I am currently <em class="teal">available</em> for new projects &mdash; <a href="<?php bloginfo('siteurl'); ?>/contact" class="teal">contact me</a>!</h3>
 <?php get_footer(); ?>
