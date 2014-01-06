@@ -319,7 +319,7 @@ code {font-size: 0.75em;}
 
                             #post-container article section.excerpt p {margin: 0 0 15px;}
 
-                            #post-container article section hr {color: #1a5779; border-bottom: 1px solid #1a5779; border-top: none; border-left: none; border-right: none;}
+                            #post-container article section hr {color: #1a5779; border-bottom: 1px solid #1a5779; border-top: none; border-left: none; border-right: none; margin: 0 0 20px; padding-top: 1px;}
 
                             #post-container article section a.thumbnail img {
                                 max-width: 100%;
