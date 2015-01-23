@@ -1,165 +1,155 @@
 /*
 Hi! How's it going?
 */
-
 * {
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-font-smoothing: antialiased;
-  font-size: inherit;
-  font-family: inherit;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-font-smoothing: antialiased;
+    font-size: inherit;
+    font-family: inherit;
 }
-
-::-webkit-input-placeholder, :-moz-placeholder {
-  font-style: italic;
-  color: #bee3de;
-  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6);
+::-webkit-input-placeholder,
+:-moz-placeholder {
+    font-style: italic;
+    color: #bee3de;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
 }
-
 body.login {
-  background: url('../img/bg.jpg') center top repeat #f4e4be;
-  font: normal 1.0625em/20px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #043f5e;
-  #login {
-    padding: 80px 0 0;
-    a {
-      color: #1a7976 !important;
-      text-decoration: none;
-      &:hover {
-        color: #0c514f !important;
-      }
+    background: url("../img/bg.jpg") center top repeat #f4e4be;
+    font: normal 1.0625em/20px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #043f5e;
+    #login {
+        padding: 80px 0 0;
+        a {
+            color: #1a7976 !important;
+            text-decoration: none;
+            &:hover {
+                color: #0c514f !important;
+            }
+        }
     }
-  }
 }
-
 #login_error {
-  background: rgba(176, 50, 6, 0.3) !important;
-  color: #79331a !important;
-  border: 1px solid #79331a !important;
-  font: normal 0.8125em/20px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: rgba(176, 50, 6, 0.3) !important;
+    color: #79331a !important;
+    border: 1px solid #79331a !important;
+    font: normal 0.8125em/20px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
 body.login #login {
-  h1 a {
-    background: url('../img/logo.png') center center no-repeat;
-    width: 220px;
-    height: 145px;
-    margin: 0 auto 20px;
-    opacity: 0.8;
-    &:hover {
-      opacity: 1;
+    h1 a {
+        background: url("../img/logo.png") center center no-repeat;
+        width: 220px;
+        height: 145px;
+        margin: 0 auto 20px;
+        opacity: 0.8;
+        &:hover {
+            opacity: 1;
+        }
     }
-  }
-  form {
-    background: transparent;
-    border: 0;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    -o-box-shadow: none;
-    -ms-box-shadow: none;
-    box-shadow: none;
-    padding: 0px 24px 36px;
-    input {
-      &[type="text"], &[type="password"] {
-        background: rgba(34, 126, 143, 0.6);
-        font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        color: #bee3de;
-        border: 1px solid #28574a;
-        padding: 0px 8px;
-        line-height: 1.5;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        -ms-border-radius: 3px;
-        -o-border-radius: 3px;
-        border-radius: 3px;
-        -webkit-transition: background 0.3s linear, box-shadow 0.3s ease;
-        -moz-transition: background 0.3s linear, box-shadow 0.3s ease;
-        -ms-transition: background 0.3s linear, box-shadow 0.3s ease;
-        transition: background 0.3s linear, box-shadow 0.3s ease;
-        -webkit-font-smoothing: subpixel-antialiased;
-      }
-      &[type="text"]:hover, &[type="password"]:hover {
-        -webkit-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.4);
-        -moz-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.4);
-        -o-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.4);
-        -ms-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.4);
-        box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.4);
-      }
-      &[type="text"]:focus body.login #login form input[type="password"]:focus {
-        background: rgba(34, 126, 143, 0.8);
-        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6);
-        -webkit-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.4), 0px 1px 0px #fff;
-        -moz-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.4), 0px 1px 0px #fff;
-        -o-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.4), 0px 1px 0px #fff;
-        -ms-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.4), 0px 1px 0px #fff;
-        box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.4), 0px 1px 0px #fff;
-      }
+    form {
+        background: transparent;
+        border: 0;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -o-box-shadow: none;
+        -ms-box-shadow: none;
+        box-shadow: none;
+        padding: 0 24px 36px;
+        input {
+            &[type="text"],
+            &[type="password"] {
+                background: rgba(34, 126, 143, 0.6);
+                font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                color: #bee3de;
+                border: 1px solid #28574a;
+                padding: 0 8px;
+                line-height: 1.5;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -ms-border-radius: 3px;
+                -o-border-radius: 3px;
+                border-radius: 3px;
+                -webkit-transition: background 0.3s linear, box-shadow 0.3s ease;
+                -moz-transition: background 0.3s linear, box-shadow 0.3s ease;
+                -ms-transition: background 0.3s linear, box-shadow 0.3s ease;
+                transition: background 0.3s linear, box-shadow 0.3s ease;
+                -webkit-font-smoothing: subpixel-antialiased;
+            }
+            &[type="text"]:hover,
+            &[type="password"]:hover {
+                -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.4);
+                -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.4);
+                -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.4);
+                -ms-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.4);
+                box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.4);
+            }
+            &[type="text"]:focus body.login #login form input[type="password"]:focus {
+                background: rgba(34, 126, 143, 0.8);
+                text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+                -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.4), 0 1px 0 #fff;
+                -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.4), 0 1px 0 #fff;
+                -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.4), 0 1px 0 #fff;
+                -ms-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.4), 0 1px 0 #fff;
+                box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.4), 0 1px 0 #fff;
+            }
+        }
+        p.submit input[type="submit"] {
+            background: -moz-linear-gradient(top, #64a1a1, #478b8a);
+            background: -ms-linear-gradient(top, #64a1a1, #478b8a);
+            background: linear-gradient(top, #64a1a1, #478b8a);
+            font-weight: 600;
+            color: #e8fbf8;
+            border: 1px solid #28574a;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+            border-radius: 3px;
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+            -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+            -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+            -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+            -ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+            -webkit-transition: none;
+            -moz-transition: none;
+            -o-transition: none;
+            -ms-transition: none;
+            transition: none;
+            &:hover {
+                background: -moz-linear-gradient(top, #5e9292, #3d7a79);
+                background: -ms-linear-gradient(top, #5e9292, #3d7a79);
+                background: linear-gradient(top, #5e9292, #3d7a79);
+                -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+                -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+                -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+                -ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+                box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+            }
+            &:active {
+                background: -moz-linear-gradient(bottom, #5e9292, #3d7a79);
+                background: -ms-linear-gradient(bottom, #5e9292, #3d7a79);
+                background: linear-gradient(bottom, #5e9292, #3d7a79);
+                -webkit-box-shadow: inset 0 2px 6px rgba(25, 78, 73, 0.8);
+                -moz-box-shadow: inset 0 2px 6px rgba(25, 78, 73, 0.8);
+                -o-box-shadow: inset 0 2px 6px rgba(25, 78, 73, 0.8);
+                -ms-box-shadow: inset 0 2px 6px rgba(25, 78, 73, 0.8);
+                box-shadow: inset 0 2px 6px rgba(25, 78, 73, 0.8);
+                text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+            }
+        }
     }
-    p.submit input[type="submit"] {
-      background: -webkit-linear-gradient(top, #64a1a1, #478b8a);
-      background: -moz-linear-gradient(top, #64a1a1, #478b8a);
-      background: -o-linear-gradient(top, #64a1a1, #478b8a);
-      background: -ms-linear-gradient(top, #64a1a1, #478b8a);
-      background: linear-gradient(top, #64a1a1, #478b8a);
-      font-weight: 600;
-      color: #e8fbf8;
-      border: 1px solid #28574a;
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      -ms-border-radius: 3px;
-      -o-border-radius: 3px;
-      border-radius: 3px;
-      text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
-      -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.6);
-      -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.6);
-      -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.6);
-      -ms-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.6);
-      box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.6);
-      -webkit-transition: none;
-      -moz-transition: none;
-      -o-transition: none;
-      -ms-transition: none;
-      transition: none;
-      &:hover {
-        background: -webkit-linear-gradient(top, #5e9292, #3d7a79);
-        background: -moz-linear-gradient(top, #5e9292, #3d7a79);
-        background: -o-linear-gradient(top, #5e9292, #3d7a79);
-        background: -ms-linear-gradient(top, #5e9292, #3d7a79);
-        background: linear-gradient(top, #5e9292, #3d7a79);
-        -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.8);
-        -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.8);
-        -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.8);
-        -ms-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.8);
-        box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.8);
-      }
-      &:active {
-        background: -webkit-linear-gradient(bottom, #5e9292, #3d7a79);
-        background: -moz-linear-gradient(bottom, #5e9292, #3d7a79);
-        background: -o-linear-gradient(bottom, #5e9292, #3d7a79);
-        background: -ms-linear-gradient(bottom, #5e9292, #3d7a79);
-        background: linear-gradient(bottom, #5e9292, #3d7a79);
-        -webkit-box-shadow: inset 0px 2px 6px rgba(25, 78, 73, 0.8);
-        -moz-box-shadow: inset 0px 2px 6px rgba(25, 78, 73, 0.8);
-        -o-box-shadow: inset 0px 2px 6px rgba(25, 78, 73, 0.8);
-        -ms-box-shadow: inset 0px 2px 6px rgba(25, 78, 73, 0.8);
-        box-shadow: inset 0px 2px 6px rgba(25, 78, 73, 0.8);
-        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
-      }
-    }
-  }
 }
-
 div#login p#nav {
-  font: normal 0.75em/20px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-align: center;
-  text-shadow: none;
+    font: normal 0.75em/20px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    text-shadow: none;
 }
-
 body.login #login p#backtoblog {
-  display: none;
+    display: none;
 }
