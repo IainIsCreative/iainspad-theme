@@ -25,7 +25,7 @@ You're now ready to add changes to the repository and put in changes.
 
 ##TODO
 
-- [ ] Convert CSS to SCSS
+- [x] Convert CSS to SCSS
 - [x] Add Gulp and Gulp Packages
 - [ ] Remove images used as backgrounds
 - [ ] Replace raster graphics (i.e. the logo) with SVGs
@@ -39,6 +39,7 @@ You're now ready to add changes to the repository and put in changes.
 	- [ ] Improve Strppd
 	- [ ] Add additional commentary
 	- [ ] Improve classification
+	- [ ] Write in BEM and keep everyting Object Oriented
 - [ ] Clean up JavaScript
 	- [ ] Stick with jQuery
 	- [ ] Remove all fade effects: if keeping effect, use CSS instead
