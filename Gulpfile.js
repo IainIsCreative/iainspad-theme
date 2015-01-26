@@ -1,24 +1,27 @@
-var gulp = require('gulp'),
-	$ = require('gulp-load-plugins')();
+var gulp = require('gulp');
+var $ = require('gulp-load-plugins')();
 
-gulp.task('scss', function() {
+gulp.task('styles', function() {
 	gulp.src([
-		'./styles/**/*.scss',
-		'./styles/*.scss'
+		'./styles/scss/**/*.scss',
+		'./styles/scss/*.scss'
 	])
 	.pipe($.sass())
 	.pipe($.autoprefixer())
 	.pipe($.minifyCss())
-	.pipe(gulp.dest('./'))
+	.pipe($.rename({
+		suffix: '.min'
+	}))
+	.pipe(gulp.dest('./styles'))
 });
 
 gulp.task('watch', function() {
 	gulp.watch([
-		'./styles/**/*.scss',
-		'./styles/*.scss'
-	], ['scss'])
+		'./styles/scss/**/*.scss',
+		'./styles/scss/*.scss'
+	], ['styles'])
 });
 
-gulp.task('default', ['scss'], function() {
+gulp.task('default', ['styles'], function() {
 
 });
