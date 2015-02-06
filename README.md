@@ -14,7 +14,7 @@ git clone git@github.com:iainspad/iainspad-theme.git
 git checkout feature/theme-improvements
 ```
 
-Then install all the Gulp packages.
+Then install all the Gulp packages, assuming you have NPM and Gulp installed.
 
 ```
 npm install
@@ -33,7 +33,7 @@ You're now ready to add changes to the repository and put in changes.
 - [ ] Remove Portfolio and Portfolio coding
 - [ ] Add a Responsive Image method (may need a lot of testing, will do this myself)
 - [ ] Clean up CSS
-	- [ ] Split SCSS into multiple files
+	- [x] Split SCSS into multiple files
 	- [ ] Add variables and Mixins
 	- [ ] Remove all IDs
 	- [ ] Improve Strppd
