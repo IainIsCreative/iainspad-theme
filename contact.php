@@ -50,16 +50,22 @@ if(isset($_POST['submitted'])) {
 
 ?>
 <?php get_header(); ?>
+
 	<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 	<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+
 		<div id="content">
 			<?php get_sidebar('left'); ?>
+
 			<section class="page-entry">
 				<?php if(isset($emailSent) && $emailSent == true) { ?>
+
 				<?php the_content(); ?>
+
 				<div class="success">
 					<h5>Thanks <?=$name; ?>! Your E&ndash;Mail has been sent.</h5>
 				</div>
+
 				<form id="contact-form" action="<?php the_permalink(); ?>" method="post">
 					<input type="text" id="name" class="required" name="mailname" placeholder="Your Name" required="required" />
 					<input type="email" id="email" class="required" name="email" placeholder="Your E–mail address" required="required" />
@@ -67,10 +73,15 @@ if(isset($_POST['submitted'])) {
 					<input type="submit" value="Send Message" />
 					<input type="hidden" id="submitted" name="submitted" value="true" />
 				</form>
+
 				<?php } else { ?>
+
 				<?php the_content(); ?>
+
 				<div class="error" <?php if(!isset($hasError)) { ?>style="display: none;"<?php } ?>>
+
 					<h5>Sorry dude! There was an error processing the form.</h5>
+
 					<ul>
 						<?php if(isset($hasError)) { ?>
 						<?php if($nameError) { ?>
@@ -84,7 +95,9 @@ if(isset($_POST['submitted'])) {
 						<?php } ?>
 						<?php } ?>
 					</ul>
+
 				</div>
+
 				<form id="contact-form" action="<?php the_permalink(); ?>" method="post">
 					<input type="text" id="name" class="required" name="mailname" placeholder="Your Name" required="required" value="<?php if(isset($_POST['mailname'])) echo $_POST['mailname']; ?>" />
 					<input type="email" id="email" class="required" name="email" placeholder="Your E–mail address" required="required" value="<?php if(isset($_POST['email'])) echo $_POST['email']; ?>" />
@@ -98,8 +111,10 @@ if(isset($_POST['submitted'])) {
 					<input type="submit" value="Send Message" />
 					<input type="hidden" id="submitted" name="submitted" value="true" />
 				</form>
+
 				<?php } ?>
 			</section>
+
 		</div>
 	</article>
 	<?php endwhile; endif; ?>

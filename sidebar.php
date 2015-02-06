@@ -9,8 +9,8 @@
 						<li><a href="/category/design">Design</a></li>
 						<li><a href="/category/case-studies">Case Studies</a></li>
 					</ul>
-					<form method="get" action="/">
-						<input type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="Search..." />
+					<form class="form" method="get" action="/">
+						<input class="form__input--search" type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="Search..." />
 					</form>
 				</nav>
 			</aside>
