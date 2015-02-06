@@ -1,0 +1,39 @@
+.main-content {
+	clear: both;
+	zoom: 1;
+
+	&:after {
+		content: '';
+		clear: both;
+		display: table;
+	}
+}
+
+@include breakpoint(600) {
+
+	#content {
+		padding: 0 0 0 230px;
+	}
+}
+
+@include breakpoint(800) {
+
+	#content {
+		padding: 0 0 0 280px;
+	}
+}
+
+@include breakpoint(900) {
+
+	.main-content {
+
+		h3.archive-title {
+			font: 600 2em/40px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+
+		#post-container article h1.post-title {
+			margin: 0 0 10px;
+		}
+	}
+
+}

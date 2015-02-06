@@ -1,0 +1,123 @@
+#blog-content {
+	overflow: hidden;
+}
+
+#post-container {
+	width: 100%;
+	float: left;
+
+	article {
+		margin: 0 0 80px;
+	}
+}
+
+#post-container article section {
+
+	&.post-entry {
+
+		> p:nth-of-type(1) {
+			font: 600 1.125em/20px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+			padding: 5px 0 0;
+		}
+
+		> {
+			ol {
+				list-style-type: decimal;
+				padding: 0 0 20px 25px;
+			}
+
+			ul {
+				list-style-type: disc;
+				padding: 0 0 20px 25px;
+			}
+
+			ol li, ul li {
+				margin: 0 0 10px;
+			}
+		}
+	}
+
+	> img {
+		max-width: 100%;
+		margin: 0 auto 20px;
+		display: block;
+	}
+}
+
+article section.post-entry img {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	overflow: hidden;
+	-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+	-o-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+	-ms-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.pagination {
+	height: 40px;
+	margin: 0 0 20px;
+
+		ul li {
+
+			a {
+				width: 50px;
+				height: 40px;
+				text-indent: -3333px;
+				display: block;
+				overflow: hidden;
+				opacity: 0.8;
+				&:hover {
+					opacity: 1;
+				}
+			}
+
+			&:first-child a {
+				background: url('../img/prev_arrow.png') center center no-repeat transparent;
+				margin: 0 0 0 20px;
+				float: left;
+
+				&:hover {
+					margin: 0 0 0 10px;
+				}
+			}
+
+			&:last-child a {
+				background: url('../img/next_arrow.png') center center no-repeat transparent;
+				margin: 0 20px 0 0;
+				float: right;
+			&:hover {
+				margin: 0 10px 0 0;
+			}
+		}
+	}
+}
+
+@include breakpoint(500) {
+
+	#post-container article section {
+		a.thumbnail img,
+		aside {
+			display: block;
+		}
+	}
+}
+
+@include breakpoint(600) {
+
+	#blog-content {
+		padding: 0 220px 0 0;
+	}
+}
+
+@include breakpoint(800) {
+
+	#blog-content {
+		padding: 0 240px 0 0;
+	}
+}

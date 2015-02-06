@@ -1,0 +1,40 @@
+/**
+*
+* Form Resets
+*
+*
+**/
+input,
+textarea,
+button {
+	font-size: inherit;
+}
+
+
+.form {
+
+}
+
+.form__input,
+.form__textarea {
+	background: rgba(34, 126, 143, 0.6);
+	border: 1px solid #28574a;
+	border-radius: 3px;
+	color: #bee3de;
+	font-size: inherit;
+	transition: background 0.3s linear, box-shadow 0.3s ease;
+
+	&:hover {
+		box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.4);
+	}
+
+	&:focus {
+		background: rgba(34, 126, 143, 0.8);
+		text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6);
+		box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.4), 0px 1px 0px #fff;
+	}
+}
+
+.form__input--search {
+
+}

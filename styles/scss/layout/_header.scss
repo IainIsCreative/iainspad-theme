@@ -1,0 +1,13 @@
+.site-masthead {
+	position: relative;
+	height: 240px;
+}
+
+@include breakpoint(800) {
+
+	.site-masthead {
+		padding-top: 20px;
+		height: 200px;
+	}
+
+}

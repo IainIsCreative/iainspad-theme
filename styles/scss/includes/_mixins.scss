@@ -1,0 +1,76 @@
+// Mixins for any project
+//
+// Feel free to add any more mixins of your own where appropriate.
+//
+
+//----Text Rendering
+// To define better text rendering on larger type and headings.
+@mixin text-rendering {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+
+//----Accessibility-friendly hiding
+// So any major elements that require to be hidden are hidden in a friendly way for Screen Readers and Search Engines.
+@mixin hidden {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+//----Bringing back invisible elements
+// As per the above mixin, this brings back the hidden elements into the fold.
+@mixin visible {
+	position: relative;
+	top: auto;
+	left: auto;
+}
+
+//----Hidden text
+// For elements that require text to be hidden on an element.
+@mixin hidden-text($padding-height) {
+	height: 0;
+	padding-top: $padding-height;
+	overflow: hidden;
+}
+
+//----Clearing
+// For clearing full width elements. See "clear floats" on http://css-tricks.com/pseudo-element-roundup/
+@mixin clearing {
+	&:before,
+	&:after {
+		content: '';
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+//----Selection Styling
+// CSS for CSS3 Selection complete with prefeixes.
+@mixin selection ($background, $color){
+	::selection {
+		background: $background;
+		color: $color;
+	}
+
+	::-moz-selection {
+		background: $background;
+		color: $color;
+	}
+}
+
+@mixin placeholder {
+	&.placeholder { @content }
+	&:-moz-placeholder { @content }
+	&::-moz-placeholder { @content; }
+	&::-webkit-input-placeholder { @content }
+}
+
+@mixin breakpoint($point) {
+	@media (min-width: relativeType($point, 16)) { @content; }
+}

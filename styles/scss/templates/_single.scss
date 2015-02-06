@@ -1,0 +1,381 @@
+#content section p:first-child {
+	font: 600 1.125em/20px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.main-content #post-container article {
+	h1.post-title {
+		font: normal 600 1.875em/30px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		margin: 0 0 5px;
+		padding: 5px 0;
+		border-bottom: 1px solid #1a5779;
+
+		a {
+		text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+		}
+	}
+
+	h4 {
+		font: normal 400 1.1875em/20px "ff-meta-serif-web-pro", Georgia, Time New Roman, serif;
+		margin: 0 0 10px;
+		color: #1b7971;
+	}
+}
+
+#post-container article section {
+
+	&.post-entry {
+
+		> p:nth-of-type(1) {
+			font: 600 1.125em/20px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+			padding: 5px 0 0;
+		}
+
+		> {
+			ol {
+				list-style-type: decimal;
+				padding: 0 0 20px 25px;
+			}
+
+			ul {
+				list-style-type: disc;
+				padding: 0 0 20px 25px;
+			}
+
+			ol li, ul li {
+				margin: 0 0 10px;
+			}
+		}
+	}
+
+	> img {
+		max-width: 100%;
+		margin: 0 auto 20px;
+		display: block;
+	}
+}
+
+article section.post-entry img {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	overflow: hidden;
+	-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+	-o-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+	-ms-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+//Quotes
+#post-container article section {
+
+	> blockquote {
+		font: italic 400 1em/20px "ff-meta-serif-web-pro", Georgia, Time New Roman, serif;
+		padding: 0 0 0 25px;
+		border-left: 5px solid rgba(27, 121, 113, 0.4);
+		color: #1b7971;
+		display: block;
+		text-shadow: 0px 1px 1px #fff;
+	}
+
+	cite {
+		font: normal 400 1em/18px "ff-meta-serif-web-pro", Georgia, Time New Roman, serif;
+		color: #1b7971;
+		display: block;
+		margin: 0 0 19px;
+
+		&:before {
+			content: '—';
+			padding: 0 5px 0 0;
+		}
+	}
+
+	pre {
+		overflow: auto;
+		white-space: none;
+		-moz-tab-size: 2;
+		-o-tab-size: 2;
+		tab-size: 2;
+
+		code {
+			overflow: auto;
+		}
+	}
+}
+
+/*---CODE!!!---*/
+
+pre > code.prettyprint {
+	background: #002b36;
+	display: block;
+	color: #93a1a1;
+	white-space: pre-wrap;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	overflow: hidden;
+	-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+	-o-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+	-ms-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+#post-container article section pre.minified code {
+	white-space: nowrap !important;
+	padding: 3px 0;
+}
+
+.linenums {
+	counter-reset: line;
+
+	* {
+		-webkit-font-smoothing: subpixel-antialiased;
+	}
+
+	li {
+		position: relative;
+		padding: 0 0 0 40px;
+
+		&:hover {
+			background: #093743;
+		}
+
+		&:before {
+			content: counter(line);
+			counter-increment: line;
+			width: 30px;
+			left: 0px;
+			text-align: center;
+			display: block;
+			position: absolute;
+			color: #336571;
+			text-shadow: 0px 1px 1px #000;
+			z-index: 10;
+		}
+
+		&:first-child {
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+
+		&:last-child {
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+	}
+}
+
+/*
+Prettify styling
+SOLARIZED DARK FTW!!
+*/
+
+.prettyprint {
+	color: #00afaf;
+
+	.pln {
+		color: inherit;
+	}
+
+	.str, .lit, .atv {
+		color: #2aa198;
+	}
+
+	.kwd {
+		color: inherit;
+	}
+
+	.com, .dec {
+		color: #586e75;
+		font-style: italic;
+	}
+
+	.typ {
+		color: #b58900;
+	}
+
+	.pun {
+		color: #dc322f;
+	}
+
+	.opn, .clo {
+		color: inherit;
+	}
+
+	.tag {
+		color: #268bd2;
+		font-weight: 600;
+	}
+
+	.atn {
+		color: inherit;
+	}
+}
+
+.lang-html.prettyprint .pun {
+	color: #585858;
+}
+
+.lang-css.prettyprint {
+	color: #00afaf;
+
+	.pun {
+		color: #839496;
+	}
+
+	.id {
+		color: #268bd2;
+
+		.pun, .pln {
+			color: #268bd2;
+		}
+	}
+
+	.class {
+		color: #268bd2;
+
+		.pun, .pln {
+			color: #268bd2;
+		}
+	}
+
+	.opn .pun {
+		color: #268bd2;
+	}
+
+	.cls .pun {
+		color: #dc322f;
+	}
+
+	.kwd {
+		color: #af8700;
+	}
+
+	.pln {
+		color: #5f8700;
+	}
+}
+
+.lang-js.prettyprint {
+	.pun {
+		color: #2aa198;
+	}
+
+	.pln {
+		color: #5f8700;
+	}
+
+	.kwd {
+		color: #268bd2;
+	}
+}
+
+.lang-php.prettyprint {
+
+	.kwd {
+		color: #859900;
+	}
+
+	.typ {
+		color: #00afaf;
+	}
+
+	.var {
+		color: #af8700;
+
+		.varname {
+			color: #268bd2;
+		}
+	}
+
+	.php_pln {
+		color: #dc322f;
+	}
+}
+
+section.post-entry footer {
+	padding: 17px 0 0;
+}
+
+#post-author {
+	background: rgba(34, 126, 143, 0.6);
+	padding: 10px 10px 13px 120px;
+	border: 1px solid #28574a;
+	border-radius: 5px;
+	overflow: hidden;
+	color: #fff;
+	font: normal 400 0.9375em/20px "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 10px 0 23px;
+	display: block;
+
+	figure {
+		width: 80px;
+		float: left;
+		margin: 0 0 0 -100px;
+	}
+}
+
+article section.post-entry footer #post-author figure a img {
+	max-width: 100%;
+	border-radius: 40px;
+	box-shadow: none;
+}
+
+.single #post-author h5 {
+	margin: 0 0 5px;
+}
+
+@include breakpoint(900) {
+
+	#post-container article section {
+		padding: 0;
+
+		aside {
+			width: 120px;
+			margin: 0 0 0 -240px;
+			float: left;
+			border-bottom: none;
+
+			ul li {
+				width: 100px;
+				height: 30px;
+				padding: 5px 0 5px;
+				border-bottom: 1px solid #1a5779;
+
+				a {
+					display: block;
+				}
+
+				&:nth-child(1):after {
+					content: '';
+				}
+
+				&:last-child {
+					display: block;
+				}
+			}
+		}
+
+		&.post-entry img {
+			max-width: 85%;
+			margin: 0 auto;
+			display: block;
+		}
+	}
+
+	div.wp-caption {
+		max-width: 80%;
+		margin: 0 auto 20px;
+	}
+
+	#post-container article section.post-entry div.wp-caption img {
+		max-width: 100%;
+	}
+}

@@ -1,0 +1,17 @@
+.archive {
+
+	.category-portfolio {
+		display: none;
+	}
+
+	&.tag {
+
+		.category-notes, .category-archives, .category-inspiration, .category-coding, .category-case-studies, .category-design {
+			display: none;
+		}
+
+		.category-portfolio {
+			display: block;
+		}
+	}
+}

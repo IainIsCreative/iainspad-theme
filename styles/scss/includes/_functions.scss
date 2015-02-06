@@ -1,0 +1,3 @@
+@function relativeType($target, $context) {
+	@return ($target / $context) * 1em;
+}
